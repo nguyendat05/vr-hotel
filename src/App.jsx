@@ -1,0 +1,39 @@
+import { useCallback, useMemo, useState } from 'react'
+import { rooms as roomCatalog } from './data/rooms'
+import { RoomViewer } from './components/vr/RoomViewer'
+import { RoomSidebar } from './components/ui/RoomSidebar'
+import { RoomHeader } from './components/ui/RoomHeader'
+import { HotspotOverlay } from './components/ui/HotspotOverlay'
+import './App.css'
+
+export default function App() {
+  const [activeRoomId, setActiveRoomId] = useState(roomCatalog[0].id)
+  const [activeHotspot, setActiveHotspot] = useState(null)
+
+  const activeRoom = useMemo(
+    () => roomCatalog.find((r) => r.id === activeRoomId) ?? roomCatalog[0],
+    [activeRoomId],
+  )
+
+  const handleSelectRoom = useCallback((roomId) => {
+    setActiveRoomId(roomId)
+    setActiveHotspot(null)
+  }, [])
+
+  const handleHotspotSelect = useCallback((hotspot) => {
+    setActiveHotspot(hotspot)
+  }, [])
+
+  const closeHotspot = useCallback(() => setActiveHotspot(null), [])
+
+  return (
+    <div className="app-shell">
+      <RoomSidebar rooms={roomCatalog} activeRoomId={activeRoom.id} onSelectRoom={handleSelectRoom} />
+      <main className="app-main">
+        <RoomHeader room={activeRoom} />
+        <RoomViewer room={activeRoom} onHotspotSelect={handleHotspotSelect} />
+      </main>
+      <HotspotOverlay hotspot={activeHotspot} roomName={activeRoom.name} onClose={closeHotspot} />
+    </div>
+  )
+}
