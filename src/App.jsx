@@ -9,6 +9,7 @@ import './App.css'
 export default function App() {
   const [activeRoomId, setActiveRoomId] = useState(roomCatalog[0].id)
   const [activeHotspot, setActiveHotspot] = useState(null)
+  const roomIdSet = useMemo(() => new Set(roomCatalog.map((room) => room.id)), [])
 
   const activeRoom = useMemo(
     () => roomCatalog.find((r) => r.id === activeRoomId) ?? roomCatalog[0],
@@ -20,9 +21,20 @@ export default function App() {
     setActiveHotspot(null)
   }, [])
 
-  const handleHotspotSelect = useCallback((hotspot) => {
-    setActiveHotspot(hotspot)
-  }, [])
+  const handleHotspotSelect = useCallback(
+    (hotspot) => {
+      const isNavigation = hotspot?.type === 'navigation' && typeof hotspot?.target === 'string'
+
+      if (isNavigation && roomIdSet.has(hotspot.target)) {
+        setActiveRoomId(hotspot.target)
+        setActiveHotspot(null)
+        return
+      }
+
+      setActiveHotspot(hotspot)
+    },
+    [roomIdSet],
+  )
 
   const closeHotspot = useCallback(() => setActiveHotspot(null), [])
 

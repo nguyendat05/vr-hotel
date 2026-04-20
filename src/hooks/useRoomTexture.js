@@ -6,6 +6,7 @@ import * as THREE from 'three'
  */
 export function useRoomTexture(imageUrl) {
   const [texture, setTexture] = useState(null)
+  const [cubeTexture, setCubeTexture] = useState(null)
   const [loading, setLoading] = useState(true)
   const requestIdRef = useRef(0)
 
@@ -13,44 +14,86 @@ export function useRoomTexture(imageUrl) {
     requestIdRef.current += 1
     const requestId = requestIdRef.current
     let cancelled = false
-    let loaded = null
-    const loader = new THREE.TextureLoader()
+    let loadedTexture = null
+    let loadedCubeTexture = null
 
     setLoading(true)
     setTexture((prev) => {
       if (prev) prev.dispose()
       return null
     })
+    setCubeTexture((prev) => {
+      if (prev) prev.dispose()
+      return null
+    })
 
-    loader.load(
-      imageUrl,
-      (tex) => {
-        if (cancelled || requestId !== requestIdRef.current) {
-          tex.dispose()
-          return
-        }
-        tex.colorSpace = THREE.SRGBColorSpace
-        tex.anisotropy = 4
-        loaded = tex
-        setTexture(tex)
-        setLoading(false)
-      },
-      undefined,
-      (err) => {
-        if (cancelled || requestId !== requestIdRef.current) return
-        console.warn('[VR Hotel] Failed to load panorama texture:', imageUrl, err)
-        setLoading(false)
-      },
-    )
+    if (imageUrl && typeof imageUrl === 'object' && imageUrl.type === 'cubefaces') {
+      const cubeLoader = new THREE.CubeTextureLoader()
+      // Panotour order is FRBLUD, while CubeTextureLoader expects:
+      // [px, nx, py, ny, pz, nz] => [right, left, up, down, front, back].
+      const orderedFaces = [
+        imageUrl.faces[1], // right
+        imageUrl.faces[3], // left
+        imageUrl.faces[4], // up
+        imageUrl.faces[5], // down
+        imageUrl.faces[0], // front
+        imageUrl.faces[2], // back
+      ]
+      cubeLoader.load(
+        orderedFaces,
+        (cubeTex) => {
+          if (cancelled || requestId !== requestIdRef.current) {
+            cubeTex.dispose()
+            return
+          }
+          cubeTex.colorSpace = THREE.SRGBColorSpace
+          loadedCubeTexture = cubeTex
+          setCubeTexture(cubeTex)
+          setLoading(false)
+        },
+        undefined,
+        (err) => {
+          if (cancelled || requestId !== requestIdRef.current) return
+          console.warn('[VR Hotel] Failed to load cube panorama:', imageUrl, err)
+          setLoading(false)
+        },
+      )
+    } else {
+      const loader = new THREE.TextureLoader()
+      loader.load(
+        imageUrl,
+        (tex) => {
+          if (cancelled || requestId !== requestIdRef.current) {
+            tex.dispose()
+            return
+          }
+          tex.colorSpace = THREE.SRGBColorSpace
+          tex.anisotropy = 4
+          loadedTexture = tex
+          setTexture(tex)
+          setLoading(false)
+        },
+        undefined,
+        (err) => {
+          if (cancelled || requestId !== requestIdRef.current) return
+          console.warn('[VR Hotel] Failed to load panorama texture:', imageUrl, err)
+          setLoading(false)
+        },
+      )
+    }
 
     return () => {
       cancelled = true
-      if (loaded) {
-        loaded.dispose()
-        loaded = null
+      if (loadedTexture) {
+        loadedTexture.dispose()
+        loadedTexture = null
+      }
+      if (loadedCubeTexture) {
+        loadedCubeTexture.dispose()
+        loadedCubeTexture = null
       }
     }
   }, [imageUrl])
 
-  return { texture, loading }
+  return { texture, cubeTexture, loading }
 }

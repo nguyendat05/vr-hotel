@@ -10,7 +10,7 @@ const CAMERA_FAR = 1000
  * Owns WebGL lifecycle + room texture loading. Canvas stays mounted for smoother room switches.
  */
 export function RoomViewer({ room, onHotspotSelect }) {
-  const { texture, loading } = useRoomTexture(room.image)
+  const { texture, cubeTexture, loading } = useRoomTexture(room.image)
 
   const handleHotspot = useCallback(
     (hotspot) => {
@@ -29,7 +29,12 @@ export function RoomViewer({ room, onHotspotSelect }) {
           dpr={[1, 2]}
           camera={{ position: [0, 0.12, 0.06], fov: 68, near: 0.01, far: CAMERA_FAR }}
         >
-          <VRScene texture={texture} hotspots={hotspots} onHotspotSelect={handleHotspot} />
+          <VRScene
+            texture={texture}
+            cubeTexture={cubeTexture}
+            hotspots={hotspots}
+            onHotspotSelect={handleHotspot}
+          />
         </Canvas>
       </div>
       {loading && <LoadingOverlay />}
