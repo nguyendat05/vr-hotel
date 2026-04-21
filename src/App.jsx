@@ -2,7 +2,6 @@ import { useCallback, useMemo, useState } from 'react'
 import { rooms as roomCatalog } from './data/rooms'
 import { RoomViewer } from './components/vr/RoomViewer'
 import { RoomSidebar } from './components/ui/RoomSidebar'
-import { RoomHeader } from './components/ui/RoomHeader'
 import { HotspotOverlay } from './components/ui/HotspotOverlay'
 import './App.css'
 
@@ -40,10 +39,11 @@ export default function App() {
 
   return (
     <div className="app-shell">
-      <RoomSidebar rooms={roomCatalog} activeRoomId={activeRoom.id} onSelectRoom={handleSelectRoom} />
       <main className="app-main">
-        <RoomHeader room={activeRoom} />
-        <RoomViewer room={activeRoom} onHotspotSelect={handleHotspotSelect} />
+        <div className="app-viewer-stage">
+          <RoomViewer room={activeRoom} onHotspotSelect={handleHotspotSelect} />
+          <RoomSidebar rooms={roomCatalog} activeRoomId={activeRoom.id} onSelectRoom={handleSelectRoom} />
+        </div>
       </main>
       <HotspotOverlay hotspot={activeHotspot} roomName={activeRoom.name} onClose={closeHotspot} />
     </div>
