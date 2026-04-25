@@ -938,6 +938,13 @@
   height: 100%;
 }
 
+.viewer-wheel-capture {
+  position: relative;
+  flex: 1;
+  min-height: 320px;
+  height: 100%;
+}
+
 .room-viewer__transition-shade {
   position: absolute;
   inset: 0;
@@ -1118,10 +1125,11 @@
   position: absolute;
   left: 0;
   top: calc(var(--callout-height, 86px) * -1);
-  width: 2px;
+  width: 0;
   height: var(--callout-height, 86px);
-  border-left: 2px dashed rgba(232, 248, 255, 0.98);
-  filter: drop-shadow(0 0 4px rgba(76, 188, 255, 0.55));
+  border-left: 3px dashed rgba(220, 242, 255, 0.95);
+  box-shadow: none;
+  filter: none;
 }
 
 .hotspot-callout .hotspot-label--callout {
@@ -1136,8 +1144,8 @@
 }
 
 .hotspot-logo {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1151,8 +1159,8 @@
 }
 
 .hotspot-logo--nav {
-  width: 24px;
-  height: 24px;
+  width: 51px;
+  height: 51px;
   border-width: 1px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
 }
@@ -1184,7 +1192,7 @@
 }
 
 .hotspot-logo__r {
-  font-size: 0.8rem;
+  font-size: 0.98rem;
   line-height: 1;
   font-weight: 700;
   color: #fff4f5;

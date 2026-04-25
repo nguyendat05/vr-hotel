@@ -6,10 +6,10 @@ import { HotspotOverlay } from './components/ui/HotspotOverlay'
 import { PositionGuide } from './components/ui/PositionGuide'
 import './App.css'
 
-const DEFAULT_CAMERA_FOV = 68
 const MIN_CAMERA_FOV = 38
 const MAX_CAMERA_FOV = 92
 const CAMERA_FOV_STEP = 6
+const DEFAULT_CAMERA_FOV = MIN_CAMERA_FOV + CAMERA_FOV_STEP * 2
 
 function directionToYawPitch([x, y, z]) {
   const yaw = (Math.atan2(x, -z) * 180) / Math.PI
@@ -263,9 +263,16 @@ export default function App() {
       setCameraFov(DEFAULT_CAMERA_FOV)
     }
   }, [activeRoom?.defaultView?.fov, clampFov])
-  const zoomIn = useCallback(() => setCameraFov((prev) => clampFov(prev - CAMERA_FOV_STEP)), [clampFov])
-  const zoomOut = useCallback(() => setCameraFov((prev) => clampFov(prev + CAMERA_FOV_STEP)), [clampFov])
-  const resetZoom = useCallback(() => setCameraFov(DEFAULT_CAMERA_FOV), [])
+  const handleViewerWheel = useCallback(
+    (event) => {
+      event.preventDefault()
+      const delta = Math.sign(event.deltaY)
+      if (delta === 0) return
+      const step = 2
+      setCameraFov((prev) => clampFov(prev + delta * step))
+    },
+    [clampFov],
+  )
   const handleDirectionPick = useCallback((direction) => {
     setPickedAngles(directionToYawPitch(direction))
   }, [])
@@ -285,15 +292,6 @@ export default function App() {
       console.log('[VR Hotel] Copy defaultView snippet:', snippet)
     }
   }, [cameraFov, viewAngles])
-  const toggleFullscreen = useCallback(() => {
-    const root = document.getElementById('hotel-tour')
-    if (!root) return
-    if (!document.fullscreenElement) {
-      root.requestFullscreen?.()
-      return
-    }
-    document.exitFullscreen?.()
-  }, [])
 
   const adjacentPreloadUrls = useMemo(() => {
     const nextRoomIds = Array.from(navigationGraph.get(activeRoomId) ?? [])
@@ -314,16 +312,18 @@ export default function App() {
     <div className="app-shell">
       <main className="app-main">
         <div id="hotel-tour" className="app-viewer-stage">
-          <RoomViewer
-            room={activeRoom}
-            cameraFov={cameraFov}
-            roomDimmed={roomDimmed}
-            transitionState={transitionState}
-            preloadImageUrls={adjacentPreloadUrls}
-            onHotspotSelect={handleHotspotSelect}
-            onDirectionPick={handleDirectionPick}
-            onViewAnglesChange={handleViewAnglesChange}
-          />
+          <div onWheel={handleViewerWheel} className="viewer-wheel-capture">
+            <RoomViewer
+              room={activeRoom}
+              cameraFov={cameraFov}
+              roomDimmed={roomDimmed}
+              transitionState={transitionState}
+              preloadImageUrls={adjacentPreloadUrls}
+              onHotspotSelect={handleHotspotSelect}
+              onDirectionPick={handleDirectionPick}
+              onViewAnglesChange={handleViewAnglesChange}
+            />
+          </div>
           <button
             type="button"
             className={`viewer-menu-toggle${menuOpen ? ' viewer-menu-toggle--open' : ''}`}
@@ -331,24 +331,6 @@ export default function App() {
           >
             {menuOpen ? 'Close menu' : 'Menu'}
           </button>
-          <div className="viewer-zoom-controls" role="group" aria-label="Điều khiển thu phóng">
-            <button type="button" className="viewer-zoom-controls__btn" onClick={zoomIn}>
-              Zoom +
-            </button>
-            <button type="button" className="viewer-zoom-controls__btn" onClick={zoomOut}>
-              Zoom -
-            </button>
-            <button type="button" className="viewer-zoom-controls__btn viewer-zoom-controls__btn--ghost" onClick={resetZoom}>
-              Mặc định
-            </button>
-            <button
-              type="button"
-              className="viewer-zoom-controls__btn viewer-zoom-controls__btn--ghost"
-              onClick={toggleFullscreen}
-            >
-              Toàn màn hình
-            </button>
-          </div>
           <PositionGuide
             visible={false}
             zoneOptions={ZONE_CONFIGS}

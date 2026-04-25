@@ -261,7 +261,7 @@ export function VRScene({
       <OrbitControls
         ref={controlsRef}
         enablePan={false}
-        enableZoom={true}
+        enableZoom={false}
         rotateSpeed={-0.32}
         dampingFactor={0.08}
         enableDamping
