@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef } from 'react'
-import { useThree } from '@react-three/fiber'
+import { useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 import { Hotspot } from '../vr/Hotspot'
@@ -118,8 +118,89 @@ function CubeBackground({ cubeTexture }) {
   return null
 }
 
-export function VRScene({ texture, cubeTexture, hotspots, onHotspotSelect }) {
+function CameraFovSync({ cameraFov }) {
+  const camera = useThree((state) => state.camera)
+
+  useEffect(() => {
+    if (!camera || typeof camera.fov !== 'number') return
+    camera.fov = cameraFov
+    camera.updateProjectionMatrix()
+  }, [camera, cameraFov])
+
+  return null
+}
+
+function CameraDirectionReporter({ onViewAnglesChange }) {
+  const camera = useThree((state) => state.camera)
+  const lastSentAtRef = useRef(0)
+  const directionRef = useRef(new THREE.Vector3())
+
+  useFrame(({ clock }) => {
+    if (!onViewAnglesChange) return
+    const now = clock.getElapsedTime()
+    if (now - lastSentAtRef.current < 0.12) return
+    lastSentAtRef.current = now
+    camera.getWorldDirection(directionRef.current)
+    onViewAnglesChange([directionRef.current.x, directionRef.current.y, directionRef.current.z])
+  })
+
+  return null
+}
+
+function ClickNavigationSurface({ onDirectionPick }) {
+  const camera = useThree((state) => state.camera)
+  const pointerStartRef = useRef(null)
+
+  const handlePointerDown = (event) => {
+    const native = event.nativeEvent
+    pointerStartRef.current = {
+      x: native.clientX,
+      y: native.clientY,
+      t: performance.now(),
+    }
+  }
+
+  const handleClick = (event) => {
+    if (!onDirectionPick) return
+    const start = pointerStartRef.current
+    pointerStartRef.current = null
+    if (start) {
+      const native = event.nativeEvent
+      const dx = native.clientX - start.x
+      const dy = native.clientY - start.y
+      const dt = performance.now() - start.t
+      const movedSq = dx * dx + dy * dy
+      // Ignore drag/long-press; only treat as intentional click/tap.
+      if (movedSq > 36 || dt > 450) return
+    }
+    event.stopPropagation()
+    const direction = event.point.clone().sub(camera.position).normalize()
+    onDirectionPick([direction.x, direction.y, direction.z])
+  }
+
+  return (
+    <mesh onPointerDown={handlePointerDown} onClick={handleClick}>
+      <sphereGeometry args={[SPHERE_RADIUS - 6, 40, 40]} />
+      <meshBasicMaterial side={THREE.BackSide} transparent opacity={0} depthWrite={false} />
+    </mesh>
+  )
+}
+
+/** Độ cao mặt “sàn” ảo trong scene — marker luôn nằm trên XZ tại Y này (chỉnh theo từng tour nếu lệch). */
+const DEFAULT_FLOOR_Y = -1.36
+
+export function VRScene({
+  texture,
+  cubeTexture,
+  cameraFov = 68,
+  hotspots,
+  onHotspotSelect,
+  onDirectionPick,
+  onViewAnglesChange,
+  floorY = DEFAULT_FLOOR_Y,
+}) {
   const list = hotspots ?? []
+  const controlsRef = useRef(null)
   const isCubeStrip =
     Boolean(texture?.image?.width) &&
     Boolean(texture?.image?.height) &&
@@ -130,6 +211,8 @@ export function VRScene({ texture, cubeTexture, hotspots, onHotspotSelect }) {
       <color attach="background" args={['#020617']} />
       <ambientLight intensity={0.35} />
       <pointLight position={[4, 6, 2]} intensity={0.8} />
+      <CameraFovSync cameraFov={cameraFov} />
+      <CameraDirectionReporter onViewAnglesChange={onViewAnglesChange} />
       {cubeTexture ? (
         <CubeBackground cubeTexture={cubeTexture} />
       ) : isCubeStrip ? (
@@ -138,11 +221,13 @@ export function VRScene({ texture, cubeTexture, hotspots, onHotspotSelect }) {
         <PanoramaSphere texture={texture} />
       )}
       {list.map((hotspot) => (
-        <Hotspot key={hotspot.id} hotspot={hotspot} onSelect={onHotspotSelect} />
+        <Hotspot key={hotspot.id} hotspot={hotspot} floorY={floorY} onSelect={onHotspotSelect} />
       ))}
+      <ClickNavigationSurface onDirectionPick={onDirectionPick} />
       <OrbitControls
+        ref={controlsRef}
         enablePan={false}
-        enableZoom={false}
+        enableZoom={true}
         rotateSpeed={-0.32}
         dampingFactor={0.08}
         enableDamping

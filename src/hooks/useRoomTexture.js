@@ -4,7 +4,25 @@ import * as THREE from 'three'
 /**
  * Loads an equirectangular JPG for the inner sphere; disposes previous textures on change/unmount.
  */
-export function useRoomTexture(imageUrl) {
+function preloadImageUrls(urls) {
+  if (!Array.isArray(urls) || urls.length === 0) return () => {}
+  const loaders = urls
+    .filter((url) => typeof url === 'string' && url.length > 0)
+    .map((url) => {
+      const img = new Image()
+      img.loading = 'eager'
+      img.decoding = 'async'
+      img.src = url
+      return img
+    })
+  return () => {
+    loaders.forEach((img) => {
+      img.src = ''
+    })
+  }
+}
+
+export function useRoomTexture(imageUrl, preloadUrls = []) {
   const [texture, setTexture] = useState(null)
   const [cubeTexture, setCubeTexture] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -94,6 +112,11 @@ export function useRoomTexture(imageUrl) {
       }
     }
   }, [imageUrl])
+
+  useEffect(() => {
+    const cleanup = preloadImageUrls(preloadUrls)
+    return cleanup
+  }, [preloadUrls])
 
   return { texture, cubeTexture, loading }
 }

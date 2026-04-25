@@ -1,62 +1,72 @@
-import { useRef } from 'react'
-
-export function RoomList({ rooms, activeRoomId, onSelectRoom }) {
-  const listRef = useRef(null)
-
-  const handleScroll = (direction) => {
-    if (!listRef.current) return
-    const amount = Math.max(220, Math.floor(listRef.current.clientWidth * 0.55))
-    listRef.current.scrollBy({ left: direction * amount, behavior: 'smooth' })
-  }
+export function RoomList({ onClose, rooms, groups = [], activeGroupId, onSelectGroup, activeRoomId, activeRoomName, onSelectRoom }) {
+  const activeGroup = groups.find((group) => group.id === activeGroupId) ?? groups[0]
+  const visibleRoomIds = new Set(activeGroup?.roomIds ?? rooms.map((room) => room.id))
+  const visibleRooms = rooms.filter((room) => visibleRoomIds.has(room.id))
+  const primaryRooms = []
+  const seenNames = new Set()
+  visibleRooms.forEach((room) => {
+    const key = room.name.trim().toLowerCase()
+    if (seenNames.has(key)) return
+    seenNames.add(key)
+    primaryRooms.push(room)
+  })
 
   return (
-    <nav className="room-sidebar__nav" aria-label="Rooms">
-      <p className="room-sidebar__label">Điểm tham quan</p>
-      <div className="room-sidebar__strip">
-        <button
-          type="button"
-          className="room-sidebar__arrow room-sidebar__arrow--left"
-          aria-label="Cuộn danh sách sang trái"
-          onClick={() => handleScroll(-1)}
-        >
-          ‹
-        </button>
-        <ul ref={listRef} className="room-sidebar__list">
-          {rooms.map((room) => {
-            const active = room.id === activeRoomId
+    <nav className="room-menu" aria-label="Menu tham quan">
+      <div className="room-menu__left">
+        <div className="room-menu__logo-wrap" aria-hidden="true">
+          <img className="room-menu__logo" src="/regalia-assets/Tour360data/pano/Images/Logo.png" alt="" />
+        </div>
+        <div className="room-menu__groups" role="tablist" aria-label="Nhóm chức năng">
+          {groups.map((group) => {
+            const active = group.id === activeGroup?.id
+            return (
+              <button
+                key={group.id}
+                type="button"
+                className={`room-menu__group-btn${active ? ' room-menu__group-btn--active' : ''}`}
+                role="tab"
+                aria-selected={active ? 'true' : 'false'}
+                onClick={() => onSelectGroup?.(group.id)}
+              >
+                {group.name}
+              </button>
+            )
+          })}
+        </div>
+      </div>
+      <section className="room-menu__views" aria-label="Danh sách view">
+        <header className="room-menu__views-head">
+          <p className="room-menu__title">{activeGroup ? activeGroup.name : 'Điểm tham quan'}</p>
+          <div className="room-menu__views-actions">
+            <span className="room-menu__count">{primaryRooms.length} viewpoints chính</span>
+            <button type="button" className="room-menu__close" onClick={onClose}>
+              Close
+            </button>
+          </div>
+        </header>
+        <ul className="room-menu__grid">
+          {primaryRooms.map((room) => {
+            const active = room.id === activeRoomId || room.name === activeRoomName
             const preview = room.image?.faces?.[0]
             return (
-              <li key={room.id} className={`room-sidebar__entry${active ? ' room-sidebar__entry--active' : ''}`}>
+              <li key={room.id} className="room-menu__card-wrap">
                 <button
                   type="button"
-                  className={`room-sidebar__item${active ? ' room-sidebar__item--active' : ''}`}
+                  className={`room-menu__card${active ? ' room-menu__card--active' : ''}`}
                   onClick={() => onSelectRoom(room.id)}
                   aria-current={active ? 'true' : undefined}
                 >
-                  <span
-                    className="room-sidebar__item-media"
-                    style={preview ? { backgroundImage: `url(${preview})` } : undefined}
-                  >
-                    <span className="room-sidebar__item-chip">{active ? 'Đang xem' : 'Xem phòng'}</span>
+                  <span className="room-menu__thumb" style={preview ? { backgroundImage: `url(${preview})` } : undefined}>
+                    <span className="room-menu__chip">{active ? 'Đang xem' : 'Mở view'}</span>
                   </span>
-                  <span className="room-sidebar__item-content">
-                    <span className="room-sidebar__item-name">{room.name}</span>
-                    <span className="room-sidebar__item-hint">{room.description}</span>
-                  </span>
+                  <span className="room-menu__name">{room.name}</span>
                 </button>
               </li>
             )
           })}
         </ul>
-        <button
-          type="button"
-          className="room-sidebar__arrow room-sidebar__arrow--right"
-          aria-label="Cuộn danh sách sang phải"
-          onClick={() => handleScroll(1)}
-        >
-          ›
-        </button>
-      </div>
+      </section>
     </nav>
   )
 }

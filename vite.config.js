@@ -4,4 +4,14 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      '/regalia-assets': {
+        target: 'https://duan.vrtour360.vn/RegaliaGold',
+        changeOrigin: true,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/regalia-assets/, ''),
+      },
+    },
+  },
 })

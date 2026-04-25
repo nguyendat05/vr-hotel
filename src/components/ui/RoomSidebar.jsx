@@ -1,18 +1,19 @@
 import { RoomList } from './RoomList'
 
-export function RoomSidebar({ rooms, activeRoomId, onSelectRoom }) {
+export function RoomSidebar({ open, onClose, rooms, groups, activeGroupId, onSelectGroup, activeRoomId, activeRoomName, onSelectRoom }) {
   return (
-    <aside className="room-sidebar">
-      <div className="room-sidebar__toolbar">
-        <div className="room-sidebar__brand">
-          <span className="room-sidebar__badge">VR Hotel</span>
-          <p className="room-sidebar__tagline">Chọn điểm tham quan</p>
-        </div>
-        <span className="room-sidebar__count">{rooms.length} phòng</span>
-      </div>
-
+    <aside className={`room-sidebar${open ? ' room-sidebar--open' : ''}`}>
       <div className="room-sidebar__body">
-        <RoomList rooms={rooms} activeRoomId={activeRoomId} onSelectRoom={onSelectRoom} />
+        <RoomList
+          onClose={onClose}
+          rooms={rooms}
+          groups={groups}
+          activeGroupId={activeGroupId}
+          onSelectGroup={onSelectGroup}
+          activeRoomId={activeRoomId}
+          activeRoomName={activeRoomName}
+          onSelectRoom={onSelectRoom}
+        />
       </div>
     </aside>
   )
