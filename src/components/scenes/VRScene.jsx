@@ -147,6 +147,37 @@ function CameraDirectionReporter({ onViewAnglesChange }) {
   return null
 }
 
+function DefaultViewSync({ sceneId, defaultView, controlsRef }) {
+  const camera = useThree((state) => state.camera)
+
+  useEffect(() => {
+    if (!camera || !defaultView) return
+    const yaw = defaultView?.yaw
+    const pitch = defaultView?.pitch
+    if (!Number.isFinite(yaw) || !Number.isFinite(pitch)) return
+
+    const yawRad = (yaw * Math.PI) / 180
+    const pitchRad = (pitch * Math.PI) / 180
+    const cosPitch = Math.cos(pitchRad)
+    const dir = new THREE.Vector3(Math.sin(yawRad) * cosPitch, Math.sin(pitchRad), -Math.cos(yawRad) * cosPitch).normalize()
+
+    if (controlsRef.current) {
+      // Keep OrbitControls center stable; only set viewing angles.
+      const pos = dir.clone().multiplyScalar(-1)
+      const azimuth = Math.atan2(pos.x, pos.z)
+      const polar = Math.acos(Math.max(-1, Math.min(1, pos.y)))
+      controlsRef.current.setAzimuthalAngle(azimuth)
+      controlsRef.current.setPolarAngle(polar)
+      controlsRef.current.update()
+    } else {
+      const target = camera.position.clone().addScaledVector(dir, 10)
+      camera.lookAt(target)
+    }
+  }, [camera, controlsRef, defaultView, sceneId])
+
+  return null
+}
+
 function ClickNavigationSurface({ onDirectionPick }) {
   const camera = useThree((state) => state.camera)
   const pointerStartRef = useRef(null)
@@ -190,6 +221,8 @@ function ClickNavigationSurface({ onDirectionPick }) {
 const DEFAULT_FLOOR_Y = -1.36
 
 export function VRScene({
+  sceneId,
+  defaultView,
   texture,
   cubeTexture,
   cameraFov = 68,
@@ -212,6 +245,7 @@ export function VRScene({
       <ambientLight intensity={0.35} />
       <pointLight position={[4, 6, 2]} intensity={0.8} />
       <CameraFovSync cameraFov={cameraFov} />
+      <DefaultViewSync sceneId={sceneId} defaultView={defaultView} controlsRef={controlsRef} />
       <CameraDirectionReporter onViewAnglesChange={onViewAnglesChange} />
       {cubeTexture ? (
         <CubeBackground cubeTexture={cubeTexture} />

@@ -45,6 +45,8 @@ export function RoomViewer({
           camera={{ position: [0, 0.12, 0.06], fov: 68, near: 0.01, far: CAMERA_FAR }}
         >
           <VRScene
+            sceneId={room.id}
+            defaultView={room.defaultView}
             texture={texture}
             cubeTexture={cubeTexture}
             cameraFov={cameraFov}

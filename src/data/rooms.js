@@ -5,6 +5,11 @@
 
 export const rooms = [
   {
+    'defaultView': {
+      'yaw': 146.03,
+      'pitch': -0.17,
+      'fov': 68,
+    },
     "id": "pano15",
     "name": "Toàn cảnh",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano15).",

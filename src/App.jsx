@@ -255,6 +255,14 @@ export default function App() {
 
   const closeHotspot = useCallback(() => setActiveHotspot(null), [])
   const clampFov = useCallback((value) => Math.min(MAX_CAMERA_FOV, Math.max(MIN_CAMERA_FOV, value)), [])
+  useEffect(() => {
+    const sceneFov = activeRoom?.defaultView?.fov
+    if (Number.isFinite(sceneFov)) {
+      setCameraFov(clampFov(sceneFov))
+    } else {
+      setCameraFov(DEFAULT_CAMERA_FOV)
+    }
+  }, [activeRoom?.defaultView?.fov, clampFov])
   const zoomIn = useCallback(() => setCameraFov((prev) => clampFov(prev - CAMERA_FOV_STEP)), [clampFov])
   const zoomOut = useCallback(() => setCameraFov((prev) => clampFov(prev + CAMERA_FOV_STEP)), [clampFov])
   const resetZoom = useCallback(() => setCameraFov(DEFAULT_CAMERA_FOV), [])
@@ -264,23 +272,19 @@ export default function App() {
   const handleViewAnglesChange = useCallback((direction) => {
     setViewAngles(directionToYawPitch(direction))
   }, [])
-  const copyHotspotSnippet = useCallback(async () => {
-    const source = pickedAngles ?? viewAngles
-    const snippet = `{
-  id: 'new-hotspot',
-  coordType: 'angular',
+  const copyDefaultViewSnippet = useCallback(async () => {
+    const source = viewAngles
+    const snippet = `defaultView: {
   yaw: ${source.yaw},
   pitch: ${source.pitch},
-  label: 'Tên hotspot',
-  type: 'navigation',
-  target: 'panoXX',
-}`
+  fov: ${cameraFov},
+},`
     try {
       await navigator.clipboard.writeText(snippet)
     } catch {
-      console.log('[VR Hotel] Copy hotspot snippet:', snippet)
+      console.log('[VR Hotel] Copy defaultView snippet:', snippet)
     }
-  }, [pickedAngles, viewAngles])
+  }, [cameraFov, viewAngles])
   const toggleFullscreen = useCallback(() => {
     const root = document.getElementById('hotel-tour')
     if (!root) return
@@ -362,16 +366,19 @@ export default function App() {
             guidedRoute={guidedRoute}
             guidedStep={guidedStep}
           />
-          <section className="hotspot-debug-panel" aria-label="Debug tọa độ hotspot">
-            <p className="hotspot-debug-panel__title">Hotspot debug</p>
+          <section className="hotspot-debug-panel" aria-label="Debug default view pano">
+            <p className="hotspot-debug-panel__title">Default view pano</p>
             <p className="hotspot-debug-panel__line">
               Tâm camera: yaw <b>{viewAngles.yaw}</b>, pitch <b>{viewAngles.pitch}</b>
             </p>
             <p className="hotspot-debug-panel__line">
               Điểm bấm gần nhất: yaw <b>{(pickedAngles ?? viewAngles).yaw}</b>, pitch <b>{(pickedAngles ?? viewAngles).pitch}</b>
             </p>
-            <button type="button" className="hotspot-debug-panel__copy" onClick={copyHotspotSnippet}>
-              Copy snippet hotspot
+            <p className="hotspot-debug-panel__line">
+              FOV hiện tại: <b>{cameraFov}</b>
+            </p>
+            <button type="button" className="hotspot-debug-panel__copy" onClick={copyDefaultViewSnippet}>
+              Copy snippet defaultView
             </button>
           </section>
           <RoomSidebar
