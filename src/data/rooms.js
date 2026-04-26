@@ -148,7 +148,7 @@ export const rooms = [
         "target": "pano13"
       },
       {
-    
+
         "id": "spotpoint664",
         'yaw': 164.91,
         'pitch': 24.15,
@@ -183,7 +183,7 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint665",
-        'yaw': 19.12, 
+        'yaw': 19.12,
         'pitch': 0.03,
         "coordType": "angular",
         "label": "Sảnh đón khách",
@@ -371,7 +371,7 @@ export const rooms = [
   },
   {
     'defaultView': {
-      'yaw':  -130.43,
+      'yaw': -130.43,
       'pitch': -10.9,
       'fov': 66,
     },
@@ -403,6 +403,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 84.62,
+      'pitch': -6.75,
+      'fov': 76,
+    },
     "id": "pano39",
     "name": "Deluxe Partial Sea View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano39).",
@@ -419,27 +424,15 @@ export const rooms = [
       ]
     },
     "hotspots": [
-      {
-        "id": "spotvideo901",
-        "yaw": -72.409158,
-        "pitch": -4.42719,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo901_playbtn",
-        "yaw": -72.409158,
-        "pitch": -4.42719,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo901_pausebtn",
-        "yaw": -72.409158,
-        "pitch": -4.42719,
-        "coordType": "angular"
-      }
+
     ]
   },
   {
+    'defaultView': {
+      'yaw': -51.79,
+      'pitch': -0.53,
+      'fov': 90,
+    },
     "id": "pano55",
     "name": "Grand Deluxe Partial Sea View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano55).",
@@ -456,27 +449,15 @@ export const rooms = [
       ]
     },
     "hotspots": [
-      {
-        "id": "spotvideo902",
-        "yaw": 170.23779,
-        "pitch": -4.200877,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo902_playbtn",
-        "yaw": 170.23779,
-        "pitch": -4.200877,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo902_pausebtn",
-        "yaw": 170.23779,
-        "pitch": -4.200877,
-        "coordType": "angular"
-      }
+
     ]
   },
   {
+    'defaultView': {
+      'yaw': 6.36,
+      'pitch': -1.02,
+      'fov': 86,
+    },
     "id": "pano50",
     "name": "Grand Deluxe Balcony Partial Sea View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano50).",
@@ -494,27 +475,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo903",
-        "yaw": 160.708748,
-        "pitch": -2.846366,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo903_playbtn",
-        "yaw": 160.708748,
-        "pitch": -2.846366,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo903_pausebtn",
-        "yaw": 160.708748,
-        "pitch": -2.846366,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint873",
-        "yaw": -31.640035,
-        "pitch": 34.848536,
+        'yaw' : 142.73, 
+        'pitch' : -35.83,
         "coordType": "angular",
         "label": "Grand Deluxe Balcony Partial Sea View",
         "type": "navigation",
@@ -522,8 +485,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint874",
-        "yaw": -173.03616,
-        "pitch": 0.606061,
+        'yaw': 18.32,
+        'pitch': 2.39,
         "coordType": "angular",
         "label": "Grand Deluxe Balcony Partial Sea View",
         "type": "navigation",
@@ -532,6 +495,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 38.91,
+      'pitch': 2.99,
+      'fov': 92,
+    },
     "id": "pano51",
     "name": "Grand Deluxe Balcony Partial Sea View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano51).",
@@ -550,8 +518,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint875",
-        "yaw": -79.781395,
-        "pitch": 18.181804,
+        'yaw': 97.97,
+        'pitch': -22.27,
         "coordType": "angular",
         "label": "Grand Deluxe Balcony Partial Sea View",
         "type": "navigation",
@@ -560,6 +528,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 52.93,
+      'pitch': 3.37,
+      'fov': 92,
+    },
     "id": "pano52",
     "name": "Grand Deluxe Balcony Partial Sea View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano52).",
@@ -578,8 +551,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint876",
-        "yaw": 39.512157,
-        "pitch": 8.484836,
+        'yaw': -138.87,
+        'pitch': -1.54,
         "coordType": "angular",
         "label": "Grand Deluxe Balcony Partial Sea View",
         "type": "navigation",
