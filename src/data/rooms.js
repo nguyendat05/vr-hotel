@@ -17,12 +17,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/overview_15/mobile/0.jpg",
-        "/regalia-assets/Tour360data/overview_15/mobile/1.jpg",
-        "/regalia-assets/Tour360data/overview_15/mobile/2.jpg",
-        "/regalia-assets/Tour360data/overview_15/mobile/3.jpg",
-        "/regalia-assets/Tour360data/overview_15/mobile/4.jpg",
-        "/regalia-assets/Tour360data/overview_15/mobile/5.jpg"
+        "/regalia-assets/Tour360data/overview_15/desktop-hd/0.jpg",
+        "/regalia-assets/Tour360data/overview_15/desktop-hd/1.jpg",
+        "/regalia-assets/Tour360data/overview_15/desktop-hd/2.jpg",
+        "/regalia-assets/Tour360data/overview_15/desktop-hd/3.jpg",
+        "/regalia-assets/Tour360data/overview_15/desktop-hd/4.jpg",
+        "/regalia-assets/Tour360data/overview_15/desktop-hd/5.jpg"
       ]
     },
     "hotspots": [
@@ -129,12 +129,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/fronthall_12/mobile/0.jpg",
-        "/regalia-assets/Tour360data/fronthall_12/mobile/1.jpg",
-        "/regalia-assets/Tour360data/fronthall_12/mobile/2.jpg",
-        "/regalia-assets/Tour360data/fronthall_12/mobile/3.jpg",
-        "/regalia-assets/Tour360data/fronthall_12/mobile/4.jpg",
-        "/regalia-assets/Tour360data/fronthall_12/mobile/5.jpg"
+        "/regalia-assets/Tour360data/fronthall_12/desktop/0.jpg",
+        "/regalia-assets/Tour360data/fronthall_12/desktop/1.jpg",
+        "/regalia-assets/Tour360data/fronthall_12/desktop/2.jpg",
+        "/regalia-assets/Tour360data/fronthall_12/desktop/3.jpg",
+        "/regalia-assets/Tour360data/fronthall_12/desktop/4.jpg",
+        "/regalia-assets/Tour360data/fronthall_12/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -172,12 +172,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/lobby_01_13/mobile/0.jpg",
-        "/regalia-assets/Tour360data/lobby_01_13/mobile/1.jpg",
-        "/regalia-assets/Tour360data/lobby_01_13/mobile/2.jpg",
-        "/regalia-assets/Tour360data/lobby_01_13/mobile/3.jpg",
-        "/regalia-assets/Tour360data/lobby_01_13/mobile/4.jpg",
-        "/regalia-assets/Tour360data/lobby_01_13/mobile/5.jpg"
+        "/regalia-assets/Tour360data/lobby_01_13/desktop/0.jpg",
+        "/regalia-assets/Tour360data/lobby_01_13/desktop/1.jpg",
+        "/regalia-assets/Tour360data/lobby_01_13/desktop/2.jpg",
+        "/regalia-assets/Tour360data/lobby_01_13/desktop/3.jpg",
+        "/regalia-assets/Tour360data/lobby_01_13/desktop/4.jpg",
+        "/regalia-assets/Tour360data/lobby_01_13/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -223,12 +223,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/lobby_02_14/mobile/0.jpg",
-        "/regalia-assets/Tour360data/lobby_02_14/mobile/1.jpg",
-        "/regalia-assets/Tour360data/lobby_02_14/mobile/2.jpg",
-        "/regalia-assets/Tour360data/lobby_02_14/mobile/3.jpg",
-        "/regalia-assets/Tour360data/lobby_02_14/mobile/4.jpg",
-        "/regalia-assets/Tour360data/lobby_02_14/mobile/5.jpg"
+        "/regalia-assets/Tour360data/lobby_02_14/desktop/0.jpg",
+        "/regalia-assets/Tour360data/lobby_02_14/desktop/1.jpg",
+        "/regalia-assets/Tour360data/lobby_02_14/desktop/2.jpg",
+        "/regalia-assets/Tour360data/lobby_02_14/desktop/3.jpg",
+        "/regalia-assets/Tour360data/lobby_02_14/desktop/4.jpg",
+        "/regalia-assets/Tour360data/lobby_02_14/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -265,12 +265,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/corridor_11/mobile/0.jpg",
-        "/regalia-assets/Tour360data/corridor_11/mobile/1.jpg",
-        "/regalia-assets/Tour360data/corridor_11/mobile/2.jpg",
-        "/regalia-assets/Tour360data/corridor_11/mobile/3.jpg",
-        "/regalia-assets/Tour360data/corridor_11/mobile/4.jpg",
-        "/regalia-assets/Tour360data/corridor_11/mobile/5.jpg"
+        "/regalia-assets/Tour360data/corridor_11/desktop/0.jpg",
+        "/regalia-assets/Tour360data/corridor_11/desktop/1.jpg",
+        "/regalia-assets/Tour360data/corridor_11/desktop/2.jpg",
+        "/regalia-assets/Tour360data/corridor_11/desktop/3.jpg",
+        "/regalia-assets/Tour360data/corridor_11/desktop/4.jpg",
+        "/regalia-assets/Tour360data/corridor_11/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -288,12 +288,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/superior_01_68/mobile/0.jpg",
-        "/regalia-assets/Tour360data/superior_01_68/mobile/1.jpg",
-        "/regalia-assets/Tour360data/superior_01_68/mobile/2.jpg",
-        "/regalia-assets/Tour360data/superior_01_68/mobile/3.jpg",
-        "/regalia-assets/Tour360data/superior_01_68/mobile/4.jpg",
-        "/regalia-assets/Tour360data/superior_01_68/mobile/5.jpg"
+        "/regalia-assets/Tour360data/superior_01_68/desktop/0.jpg",
+        "/regalia-assets/Tour360data/superior_01_68/desktop/1.jpg",
+        "/regalia-assets/Tour360data/superior_01_68/desktop/2.jpg",
+        "/regalia-assets/Tour360data/superior_01_68/desktop/3.jpg",
+        "/regalia-assets/Tour360data/superior_01_68/desktop/4.jpg",
+        "/regalia-assets/Tour360data/superior_01_68/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -321,12 +321,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/superior_02_69/mobile/0.jpg",
-        "/regalia-assets/Tour360data/superior_02_69/mobile/1.jpg",
-        "/regalia-assets/Tour360data/superior_02_69/mobile/2.jpg",
-        "/regalia-assets/Tour360data/superior_02_69/mobile/3.jpg",
-        "/regalia-assets/Tour360data/superior_02_69/mobile/4.jpg",
-        "/regalia-assets/Tour360data/superior_02_69/mobile/5.jpg"
+        "/regalia-assets/Tour360data/superior_02_69/desktop/0.jpg",
+        "/regalia-assets/Tour360data/superior_02_69/desktop/1.jpg",
+        "/regalia-assets/Tour360data/superior_02_69/desktop/2.jpg",
+        "/regalia-assets/Tour360data/superior_02_69/desktop/3.jpg",
+        "/regalia-assets/Tour360data/superior_02_69/desktop/4.jpg",
+        "/regalia-assets/Tour360data/superior_02_69/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -354,12 +354,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/deluxebalcony_01_37/mobile/0.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_01_37/mobile/1.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_01_37/mobile/2.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_01_37/mobile/3.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_01_37/mobile/4.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_01_37/mobile/5.jpg"
+        "/regalia-assets/Tour360data/deluxebalcony_01_37/desktop/0.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_01_37/desktop/1.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_01_37/desktop/2.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_01_37/desktop/3.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_01_37/desktop/4.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_01_37/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -387,12 +387,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/deluxebalcony_02_38/mobile/0.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_02_38/mobile/1.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_02_38/mobile/2.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_02_38/mobile/3.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_02_38/mobile/4.jpg",
-        "/regalia-assets/Tour360data/deluxebalcony_02_38/mobile/5.jpg"
+        "/regalia-assets/Tour360data/deluxebalcony_02_38/desktop/0.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_02_38/desktop/1.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_02_38/desktop/2.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_02_38/desktop/3.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_02_38/desktop/4.jpg",
+        "/regalia-assets/Tour360data/deluxebalcony_02_38/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -420,12 +420,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/deluxepartial_01_39/mobile/0.jpg",
-        "/regalia-assets/Tour360data/deluxepartial_01_39/mobile/1.jpg",
-        "/regalia-assets/Tour360data/deluxepartial_01_39/mobile/2.jpg",
-        "/regalia-assets/Tour360data/deluxepartial_01_39/mobile/3.jpg",
-        "/regalia-assets/Tour360data/deluxepartial_01_39/mobile/4.jpg",
-        "/regalia-assets/Tour360data/deluxepartial_01_39/mobile/5.jpg"
+        "/regalia-assets/Tour360data/deluxepartial_01_39/desktop/0.jpg",
+        "/regalia-assets/Tour360data/deluxepartial_01_39/desktop/1.jpg",
+        "/regalia-assets/Tour360data/deluxepartial_01_39/desktop/2.jpg",
+        "/regalia-assets/Tour360data/deluxepartial_01_39/desktop/3.jpg",
+        "/regalia-assets/Tour360data/deluxepartial_01_39/desktop/4.jpg",
+        "/regalia-assets/Tour360data/deluxepartial_01_39/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -445,12 +445,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/granddeluxe_01_55/mobile/0.jpg",
-        "/regalia-assets/Tour360data/granddeluxe_01_55/mobile/1.jpg",
-        "/regalia-assets/Tour360data/granddeluxe_01_55/mobile/2.jpg",
-        "/regalia-assets/Tour360data/granddeluxe_01_55/mobile/3.jpg",
-        "/regalia-assets/Tour360data/granddeluxe_01_55/mobile/4.jpg",
-        "/regalia-assets/Tour360data/granddeluxe_01_55/mobile/5.jpg"
+        "/regalia-assets/Tour360data/granddeluxe_01_55/desktop/0.jpg",
+        "/regalia-assets/Tour360data/granddeluxe_01_55/desktop/1.jpg",
+        "/regalia-assets/Tour360data/granddeluxe_01_55/desktop/2.jpg",
+        "/regalia-assets/Tour360data/granddeluxe_01_55/desktop/3.jpg",
+        "/regalia-assets/Tour360data/granddeluxe_01_55/desktop/4.jpg",
+        "/regalia-assets/Tour360data/granddeluxe_01_55/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -470,12 +470,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/mobile/0.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/mobile/1.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/mobile/2.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/mobile/3.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/mobile/4.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/mobile/5.jpg"
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/desktop/0.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/desktop/1.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/desktop/2.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/desktop/3.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/desktop/4.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_50/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -512,12 +512,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/mobile/0.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/mobile/1.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/mobile/2.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/mobile/3.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/mobile/4.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/mobile/5.jpg"
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/desktop/0.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/desktop/1.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/desktop/2.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/desktop/3.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/desktop/4.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_51/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -545,12 +545,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/mobile/0.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/mobile/1.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/mobile/2.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/mobile/3.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/mobile/4.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/mobile/5.jpg"
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/desktop/0.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/desktop/1.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/desktop/2.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/desktop/3.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/desktop/4.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_52/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -573,12 +573,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/mobile/0.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/mobile/1.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/mobile/2.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/mobile/3.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/mobile/4.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/mobile/5.jpg"
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/desktop/0.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/desktop/1.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/desktop/2.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/desktop/3.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/desktop/4.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_53/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -591,12 +591,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/mobile/0.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/mobile/1.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/mobile/2.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/mobile/3.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/mobile/4.jpg",
-        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/mobile/5.jpg"
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/desktop/0.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/desktop/1.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/desktop/2.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/desktop/3.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/desktop/4.jpg",
+        "/regalia-assets/Tour360data/granddeluxebalcony_0_54/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -614,12 +614,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/familycity_01_46/mobile/0.jpg",
-        "/regalia-assets/Tour360data/familycity_01_46/mobile/1.jpg",
-        "/regalia-assets/Tour360data/familycity_01_46/mobile/2.jpg",
-        "/regalia-assets/Tour360data/familycity_01_46/mobile/3.jpg",
-        "/regalia-assets/Tour360data/familycity_01_46/mobile/4.jpg",
-        "/regalia-assets/Tour360data/familycity_01_46/mobile/5.jpg"
+        "/regalia-assets/Tour360data/familycity_01_46/desktop/0.jpg",
+        "/regalia-assets/Tour360data/familycity_01_46/desktop/1.jpg",
+        "/regalia-assets/Tour360data/familycity_01_46/desktop/2.jpg",
+        "/regalia-assets/Tour360data/familycity_01_46/desktop/3.jpg",
+        "/regalia-assets/Tour360data/familycity_01_46/desktop/4.jpg",
+        "/regalia-assets/Tour360data/familycity_01_46/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -647,12 +647,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/familycity_02_47/mobile/0.jpg",
-        "/regalia-assets/Tour360data/familycity_02_47/mobile/1.jpg",
-        "/regalia-assets/Tour360data/familycity_02_47/mobile/2.jpg",
-        "/regalia-assets/Tour360data/familycity_02_47/mobile/3.jpg",
-        "/regalia-assets/Tour360data/familycity_02_47/mobile/4.jpg",
-        "/regalia-assets/Tour360data/familycity_02_47/mobile/5.jpg"
+        "/regalia-assets/Tour360data/familycity_02_47/desktop/0.jpg",
+        "/regalia-assets/Tour360data/familycity_02_47/desktop/1.jpg",
+        "/regalia-assets/Tour360data/familycity_02_47/desktop/2.jpg",
+        "/regalia-assets/Tour360data/familycity_02_47/desktop/3.jpg",
+        "/regalia-assets/Tour360data/familycity_02_47/desktop/4.jpg",
+        "/regalia-assets/Tour360data/familycity_02_47/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -680,12 +680,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/familysea_01_48/mobile/0.jpg",
-        "/regalia-assets/Tour360data/familysea_01_48/mobile/1.jpg",
-        "/regalia-assets/Tour360data/familysea_01_48/mobile/2.jpg",
-        "/regalia-assets/Tour360data/familysea_01_48/mobile/3.jpg",
-        "/regalia-assets/Tour360data/familysea_01_48/mobile/4.jpg",
-        "/regalia-assets/Tour360data/familysea_01_48/mobile/5.jpg"
+        "/regalia-assets/Tour360data/familysea_01_48/desktop/0.jpg",
+        "/regalia-assets/Tour360data/familysea_01_48/desktop/1.jpg",
+        "/regalia-assets/Tour360data/familysea_01_48/desktop/2.jpg",
+        "/regalia-assets/Tour360data/familysea_01_48/desktop/3.jpg",
+        "/regalia-assets/Tour360data/familysea_01_48/desktop/4.jpg",
+        "/regalia-assets/Tour360data/familysea_01_48/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -713,12 +713,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/familysea_02_49/mobile/0.jpg",
-        "/regalia-assets/Tour360data/familysea_02_49/mobile/1.jpg",
-        "/regalia-assets/Tour360data/familysea_02_49/mobile/2.jpg",
-        "/regalia-assets/Tour360data/familysea_02_49/mobile/3.jpg",
-        "/regalia-assets/Tour360data/familysea_02_49/mobile/4.jpg",
-        "/regalia-assets/Tour360data/familysea_02_49/mobile/5.jpg"
+        "/regalia-assets/Tour360data/familysea_02_49/desktop/0.jpg",
+        "/regalia-assets/Tour360data/familysea_02_49/desktop/1.jpg",
+        "/regalia-assets/Tour360data/familysea_02_49/desktop/2.jpg",
+        "/regalia-assets/Tour360data/familysea_02_49/desktop/3.jpg",
+        "/regalia-assets/Tour360data/familysea_02_49/desktop/4.jpg",
+        "/regalia-assets/Tour360data/familysea_02_49/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -746,12 +746,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/suite_01_64/mobile/0.jpg",
-        "/regalia-assets/Tour360data/suite_01_64/mobile/1.jpg",
-        "/regalia-assets/Tour360data/suite_01_64/mobile/2.jpg",
-        "/regalia-assets/Tour360data/suite_01_64/mobile/3.jpg",
-        "/regalia-assets/Tour360data/suite_01_64/mobile/4.jpg",
-        "/regalia-assets/Tour360data/suite_01_64/mobile/5.jpg"
+        "/regalia-assets/Tour360data/suite_01_64/desktop/0.jpg",
+        "/regalia-assets/Tour360data/suite_01_64/desktop/1.jpg",
+        "/regalia-assets/Tour360data/suite_01_64/desktop/2.jpg",
+        "/regalia-assets/Tour360data/suite_01_64/desktop/3.jpg",
+        "/regalia-assets/Tour360data/suite_01_64/desktop/4.jpg",
+        "/regalia-assets/Tour360data/suite_01_64/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -779,12 +779,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/suite_02_65/mobile/0.jpg",
-        "/regalia-assets/Tour360data/suite_02_65/mobile/1.jpg",
-        "/regalia-assets/Tour360data/suite_02_65/mobile/2.jpg",
-        "/regalia-assets/Tour360data/suite_02_65/mobile/3.jpg",
-        "/regalia-assets/Tour360data/suite_02_65/mobile/4.jpg",
-        "/regalia-assets/Tour360data/suite_02_65/mobile/5.jpg"
+        "/regalia-assets/Tour360data/suite_02_65/desktop/0.jpg",
+        "/regalia-assets/Tour360data/suite_02_65/desktop/1.jpg",
+        "/regalia-assets/Tour360data/suite_02_65/desktop/2.jpg",
+        "/regalia-assets/Tour360data/suite_02_65/desktop/3.jpg",
+        "/regalia-assets/Tour360data/suite_02_65/desktop/4.jpg",
+        "/regalia-assets/Tour360data/suite_02_65/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -807,12 +807,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/suite_03_66/mobile/0.jpg",
-        "/regalia-assets/Tour360data/suite_03_66/mobile/1.jpg",
-        "/regalia-assets/Tour360data/suite_03_66/mobile/2.jpg",
-        "/regalia-assets/Tour360data/suite_03_66/mobile/3.jpg",
-        "/regalia-assets/Tour360data/suite_03_66/mobile/4.jpg",
-        "/regalia-assets/Tour360data/suite_03_66/mobile/5.jpg"
+        "/regalia-assets/Tour360data/suite_03_66/desktop/0.jpg",
+        "/regalia-assets/Tour360data/suite_03_66/desktop/1.jpg",
+        "/regalia-assets/Tour360data/suite_03_66/desktop/2.jpg",
+        "/regalia-assets/Tour360data/suite_03_66/desktop/3.jpg",
+        "/regalia-assets/Tour360data/suite_03_66/desktop/4.jpg",
+        "/regalia-assets/Tour360data/suite_03_66/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -825,12 +825,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/suite_04_67/mobile/0.jpg",
-        "/regalia-assets/Tour360data/suite_04_67/mobile/1.jpg",
-        "/regalia-assets/Tour360data/suite_04_67/mobile/2.jpg",
-        "/regalia-assets/Tour360data/suite_04_67/mobile/3.jpg",
-        "/regalia-assets/Tour360data/suite_04_67/mobile/4.jpg",
-        "/regalia-assets/Tour360data/suite_04_67/mobile/5.jpg"
+        "/regalia-assets/Tour360data/suite_04_67/desktop/0.jpg",
+        "/regalia-assets/Tour360data/suite_04_67/desktop/1.jpg",
+        "/regalia-assets/Tour360data/suite_04_67/desktop/2.jpg",
+        "/regalia-assets/Tour360data/suite_04_67/desktop/3.jpg",
+        "/regalia-assets/Tour360data/suite_04_67/desktop/4.jpg",
+        "/regalia-assets/Tour360data/suite_04_67/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -848,12 +848,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/externalsuite_01_40/mobile/0.jpg",
-        "/regalia-assets/Tour360data/externalsuite_01_40/mobile/1.jpg",
-        "/regalia-assets/Tour360data/externalsuite_01_40/mobile/2.jpg",
-        "/regalia-assets/Tour360data/externalsuite_01_40/mobile/3.jpg",
-        "/regalia-assets/Tour360data/externalsuite_01_40/mobile/4.jpg",
-        "/regalia-assets/Tour360data/externalsuite_01_40/mobile/5.jpg"
+        "/regalia-assets/Tour360data/externalsuite_01_40/desktop/0.jpg",
+        "/regalia-assets/Tour360data/externalsuite_01_40/desktop/1.jpg",
+        "/regalia-assets/Tour360data/externalsuite_01_40/desktop/2.jpg",
+        "/regalia-assets/Tour360data/externalsuite_01_40/desktop/3.jpg",
+        "/regalia-assets/Tour360data/externalsuite_01_40/desktop/4.jpg",
+        "/regalia-assets/Tour360data/externalsuite_01_40/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -881,12 +881,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/externalsuite_02_41/mobile/0.jpg",
-        "/regalia-assets/Tour360data/externalsuite_02_41/mobile/1.jpg",
-        "/regalia-assets/Tour360data/externalsuite_02_41/mobile/2.jpg",
-        "/regalia-assets/Tour360data/externalsuite_02_41/mobile/3.jpg",
-        "/regalia-assets/Tour360data/externalsuite_02_41/mobile/4.jpg",
-        "/regalia-assets/Tour360data/externalsuite_02_41/mobile/5.jpg"
+        "/regalia-assets/Tour360data/externalsuite_02_41/desktop/0.jpg",
+        "/regalia-assets/Tour360data/externalsuite_02_41/desktop/1.jpg",
+        "/regalia-assets/Tour360data/externalsuite_02_41/desktop/2.jpg",
+        "/regalia-assets/Tour360data/externalsuite_02_41/desktop/3.jpg",
+        "/regalia-assets/Tour360data/externalsuite_02_41/desktop/4.jpg",
+        "/regalia-assets/Tour360data/externalsuite_02_41/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -923,12 +923,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/externalsuite_03_42/mobile/0.jpg",
-        "/regalia-assets/Tour360data/externalsuite_03_42/mobile/1.jpg",
-        "/regalia-assets/Tour360data/externalsuite_03_42/mobile/2.jpg",
-        "/regalia-assets/Tour360data/externalsuite_03_42/mobile/3.jpg",
-        "/regalia-assets/Tour360data/externalsuite_03_42/mobile/4.jpg",
-        "/regalia-assets/Tour360data/externalsuite_03_42/mobile/5.jpg"
+        "/regalia-assets/Tour360data/externalsuite_03_42/desktop/0.jpg",
+        "/regalia-assets/Tour360data/externalsuite_03_42/desktop/1.jpg",
+        "/regalia-assets/Tour360data/externalsuite_03_42/desktop/2.jpg",
+        "/regalia-assets/Tour360data/externalsuite_03_42/desktop/3.jpg",
+        "/regalia-assets/Tour360data/externalsuite_03_42/desktop/4.jpg",
+        "/regalia-assets/Tour360data/externalsuite_03_42/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -951,12 +951,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/externalsuite_04_43/mobile/0.jpg",
-        "/regalia-assets/Tour360data/externalsuite_04_43/mobile/1.jpg",
-        "/regalia-assets/Tour360data/externalsuite_04_43/mobile/2.jpg",
-        "/regalia-assets/Tour360data/externalsuite_04_43/mobile/3.jpg",
-        "/regalia-assets/Tour360data/externalsuite_04_43/mobile/4.jpg",
-        "/regalia-assets/Tour360data/externalsuite_04_43/mobile/5.jpg"
+        "/regalia-assets/Tour360data/externalsuite_04_43/desktop/0.jpg",
+        "/regalia-assets/Tour360data/externalsuite_04_43/desktop/1.jpg",
+        "/regalia-assets/Tour360data/externalsuite_04_43/desktop/2.jpg",
+        "/regalia-assets/Tour360data/externalsuite_04_43/desktop/3.jpg",
+        "/regalia-assets/Tour360data/externalsuite_04_43/desktop/4.jpg",
+        "/regalia-assets/Tour360data/externalsuite_04_43/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -969,12 +969,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/externalsuite_05_44/mobile/0.jpg",
-        "/regalia-assets/Tour360data/externalsuite_05_44/mobile/1.jpg",
-        "/regalia-assets/Tour360data/externalsuite_05_44/mobile/2.jpg",
-        "/regalia-assets/Tour360data/externalsuite_05_44/mobile/3.jpg",
-        "/regalia-assets/Tour360data/externalsuite_05_44/mobile/4.jpg",
-        "/regalia-assets/Tour360data/externalsuite_05_44/mobile/5.jpg"
+        "/regalia-assets/Tour360data/externalsuite_05_44/desktop/0.jpg",
+        "/regalia-assets/Tour360data/externalsuite_05_44/desktop/1.jpg",
+        "/regalia-assets/Tour360data/externalsuite_05_44/desktop/2.jpg",
+        "/regalia-assets/Tour360data/externalsuite_05_44/desktop/3.jpg",
+        "/regalia-assets/Tour360data/externalsuite_05_44/desktop/4.jpg",
+        "/regalia-assets/Tour360data/externalsuite_05_44/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -987,12 +987,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/externalsuite_06_45/mobile/0.jpg",
-        "/regalia-assets/Tour360data/externalsuite_06_45/mobile/1.jpg",
-        "/regalia-assets/Tour360data/externalsuite_06_45/mobile/2.jpg",
-        "/regalia-assets/Tour360data/externalsuite_06_45/mobile/3.jpg",
-        "/regalia-assets/Tour360data/externalsuite_06_45/mobile/4.jpg",
-        "/regalia-assets/Tour360data/externalsuite_06_45/mobile/5.jpg"
+        "/regalia-assets/Tour360data/externalsuite_06_45/desktop/0.jpg",
+        "/regalia-assets/Tour360data/externalsuite_06_45/desktop/1.jpg",
+        "/regalia-assets/Tour360data/externalsuite_06_45/desktop/2.jpg",
+        "/regalia-assets/Tour360data/externalsuite_06_45/desktop/3.jpg",
+        "/regalia-assets/Tour360data/externalsuite_06_45/desktop/4.jpg",
+        "/regalia-assets/Tour360data/externalsuite_06_45/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -1010,12 +1010,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/royal_01_61/mobile/0.jpg",
-        "/regalia-assets/Tour360data/royal_01_61/mobile/1.jpg",
-        "/regalia-assets/Tour360data/royal_01_61/mobile/2.jpg",
-        "/regalia-assets/Tour360data/royal_01_61/mobile/3.jpg",
-        "/regalia-assets/Tour360data/royal_01_61/mobile/4.jpg",
-        "/regalia-assets/Tour360data/royal_01_61/mobile/5.jpg"
+        "/regalia-assets/Tour360data/royal_01_61/desktop/0.jpg",
+        "/regalia-assets/Tour360data/royal_01_61/desktop/1.jpg",
+        "/regalia-assets/Tour360data/royal_01_61/desktop/2.jpg",
+        "/regalia-assets/Tour360data/royal_01_61/desktop/3.jpg",
+        "/regalia-assets/Tour360data/royal_01_61/desktop/4.jpg",
+        "/regalia-assets/Tour360data/royal_01_61/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1052,12 +1052,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/royal_02_62/mobile/0.jpg",
-        "/regalia-assets/Tour360data/royal_02_62/mobile/1.jpg",
-        "/regalia-assets/Tour360data/royal_02_62/mobile/2.jpg",
-        "/regalia-assets/Tour360data/royal_02_62/mobile/3.jpg",
-        "/regalia-assets/Tour360data/royal_02_62/mobile/4.jpg",
-        "/regalia-assets/Tour360data/royal_02_62/mobile/5.jpg"
+        "/regalia-assets/Tour360data/royal_02_62/desktop/0.jpg",
+        "/regalia-assets/Tour360data/royal_02_62/desktop/1.jpg",
+        "/regalia-assets/Tour360data/royal_02_62/desktop/2.jpg",
+        "/regalia-assets/Tour360data/royal_02_62/desktop/3.jpg",
+        "/regalia-assets/Tour360data/royal_02_62/desktop/4.jpg",
+        "/regalia-assets/Tour360data/royal_02_62/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1085,12 +1085,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/royal_03_63/mobile/0.jpg",
-        "/regalia-assets/Tour360data/royal_03_63/mobile/1.jpg",
-        "/regalia-assets/Tour360data/royal_03_63/mobile/2.jpg",
-        "/regalia-assets/Tour360data/royal_03_63/mobile/3.jpg",
-        "/regalia-assets/Tour360data/royal_03_63/mobile/4.jpg",
-        "/regalia-assets/Tour360data/royal_03_63/mobile/5.jpg"
+        "/regalia-assets/Tour360data/royal_03_63/desktop/0.jpg",
+        "/regalia-assets/Tour360data/royal_03_63/desktop/1.jpg",
+        "/regalia-assets/Tour360data/royal_03_63/desktop/2.jpg",
+        "/regalia-assets/Tour360data/royal_03_63/desktop/3.jpg",
+        "/regalia-assets/Tour360data/royal_03_63/desktop/4.jpg",
+        "/regalia-assets/Tour360data/royal_03_63/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1118,12 +1118,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/president_01_56/mobile/0.jpg",
-        "/regalia-assets/Tour360data/president_01_56/mobile/1.jpg",
-        "/regalia-assets/Tour360data/president_01_56/mobile/2.jpg",
-        "/regalia-assets/Tour360data/president_01_56/mobile/3.jpg",
-        "/regalia-assets/Tour360data/president_01_56/mobile/4.jpg",
-        "/regalia-assets/Tour360data/president_01_56/mobile/5.jpg"
+        "/regalia-assets/Tour360data/president_01_56/desktop/0.jpg",
+        "/regalia-assets/Tour360data/president_01_56/desktop/1.jpg",
+        "/regalia-assets/Tour360data/president_01_56/desktop/2.jpg",
+        "/regalia-assets/Tour360data/president_01_56/desktop/3.jpg",
+        "/regalia-assets/Tour360data/president_01_56/desktop/4.jpg",
+        "/regalia-assets/Tour360data/president_01_56/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1160,12 +1160,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/president_02_57/mobile/0.jpg",
-        "/regalia-assets/Tour360data/president_02_57/mobile/1.jpg",
-        "/regalia-assets/Tour360data/president_02_57/mobile/2.jpg",
-        "/regalia-assets/Tour360data/president_02_57/mobile/3.jpg",
-        "/regalia-assets/Tour360data/president_02_57/mobile/4.jpg",
-        "/regalia-assets/Tour360data/president_02_57/mobile/5.jpg"
+        "/regalia-assets/Tour360data/president_02_57/desktop/0.jpg",
+        "/regalia-assets/Tour360data/president_02_57/desktop/1.jpg",
+        "/regalia-assets/Tour360data/president_02_57/desktop/2.jpg",
+        "/regalia-assets/Tour360data/president_02_57/desktop/3.jpg",
+        "/regalia-assets/Tour360data/president_02_57/desktop/4.jpg",
+        "/regalia-assets/Tour360data/president_02_57/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1193,12 +1193,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/president_05_60/mobile/0.jpg",
-        "/regalia-assets/Tour360data/president_05_60/mobile/1.jpg",
-        "/regalia-assets/Tour360data/president_05_60/mobile/2.jpg",
-        "/regalia-assets/Tour360data/president_05_60/mobile/3.jpg",
-        "/regalia-assets/Tour360data/president_05_60/mobile/4.jpg",
-        "/regalia-assets/Tour360data/president_05_60/mobile/5.jpg"
+        "/regalia-assets/Tour360data/president_05_60/desktop/0.jpg",
+        "/regalia-assets/Tour360data/president_05_60/desktop/1.jpg",
+        "/regalia-assets/Tour360data/president_05_60/desktop/2.jpg",
+        "/regalia-assets/Tour360data/president_05_60/desktop/3.jpg",
+        "/regalia-assets/Tour360data/president_05_60/desktop/4.jpg",
+        "/regalia-assets/Tour360data/president_05_60/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1231,12 +1231,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/president_03_58/mobile/0.jpg",
-        "/regalia-assets/Tour360data/president_03_58/mobile/1.jpg",
-        "/regalia-assets/Tour360data/president_03_58/mobile/2.jpg",
-        "/regalia-assets/Tour360data/president_03_58/mobile/3.jpg",
-        "/regalia-assets/Tour360data/president_03_58/mobile/4.jpg",
-        "/regalia-assets/Tour360data/president_03_58/mobile/5.jpg"
+        "/regalia-assets/Tour360data/president_03_58/desktop/0.jpg",
+        "/regalia-assets/Tour360data/president_03_58/desktop/1.jpg",
+        "/regalia-assets/Tour360data/president_03_58/desktop/2.jpg",
+        "/regalia-assets/Tour360data/president_03_58/desktop/3.jpg",
+        "/regalia-assets/Tour360data/president_03_58/desktop/4.jpg",
+        "/regalia-assets/Tour360data/president_03_58/desktop/5.jpg"
       ]
     },
     "hotspots": []
@@ -1254,12 +1254,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/president_04_59/mobile/0.jpg",
-        "/regalia-assets/Tour360data/president_04_59/mobile/1.jpg",
-        "/regalia-assets/Tour360data/president_04_59/mobile/2.jpg",
-        "/regalia-assets/Tour360data/president_04_59/mobile/3.jpg",
-        "/regalia-assets/Tour360data/president_04_59/mobile/4.jpg",
-        "/regalia-assets/Tour360data/president_04_59/mobile/5.jpg"
+        "/regalia-assets/Tour360data/president_04_59/desktop/0.jpg",
+        "/regalia-assets/Tour360data/president_04_59/desktop/1.jpg",
+        "/regalia-assets/Tour360data/president_04_59/desktop/2.jpg",
+        "/regalia-assets/Tour360data/president_04_59/desktop/3.jpg",
+        "/regalia-assets/Tour360data/president_04_59/desktop/4.jpg",
+        "/regalia-assets/Tour360data/president_04_59/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1287,12 +1287,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/buffet_01_17/mobile/0.jpg",
-        "/regalia-assets/Tour360data/buffet_01_17/mobile/1.jpg",
-        "/regalia-assets/Tour360data/buffet_01_17/mobile/2.jpg",
-        "/regalia-assets/Tour360data/buffet_01_17/mobile/3.jpg",
-        "/regalia-assets/Tour360data/buffet_01_17/mobile/4.jpg",
-        "/regalia-assets/Tour360data/buffet_01_17/mobile/5.jpg"
+        "/regalia-assets/Tour360data/buffet_01_17/desktop/0.jpg",
+        "/regalia-assets/Tour360data/buffet_01_17/desktop/1.jpg",
+        "/regalia-assets/Tour360data/buffet_01_17/desktop/2.jpg",
+        "/regalia-assets/Tour360data/buffet_01_17/desktop/3.jpg",
+        "/regalia-assets/Tour360data/buffet_01_17/desktop/4.jpg",
+        "/regalia-assets/Tour360data/buffet_01_17/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1320,12 +1320,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/buffet_02_18/mobile/0.jpg",
-        "/regalia-assets/Tour360data/buffet_02_18/mobile/1.jpg",
-        "/regalia-assets/Tour360data/buffet_02_18/mobile/2.jpg",
-        "/regalia-assets/Tour360data/buffet_02_18/mobile/3.jpg",
-        "/regalia-assets/Tour360data/buffet_02_18/mobile/4.jpg",
-        "/regalia-assets/Tour360data/buffet_02_18/mobile/5.jpg"
+        "/regalia-assets/Tour360data/buffet_02_18/desktop/0.jpg",
+        "/regalia-assets/Tour360data/buffet_02_18/desktop/1.jpg",
+        "/regalia-assets/Tour360data/buffet_02_18/desktop/2.jpg",
+        "/regalia-assets/Tour360data/buffet_02_18/desktop/3.jpg",
+        "/regalia-assets/Tour360data/buffet_02_18/desktop/4.jpg",
+        "/regalia-assets/Tour360data/buffet_02_18/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1353,12 +1353,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/thesun_01_25/mobile/0.jpg",
-        "/regalia-assets/Tour360data/thesun_01_25/mobile/1.jpg",
-        "/regalia-assets/Tour360data/thesun_01_25/mobile/2.jpg",
-        "/regalia-assets/Tour360data/thesun_01_25/mobile/3.jpg",
-        "/regalia-assets/Tour360data/thesun_01_25/mobile/4.jpg",
-        "/regalia-assets/Tour360data/thesun_01_25/mobile/5.jpg"
+        "/regalia-assets/Tour360data/thesun_01_25/desktop/0.jpg",
+        "/regalia-assets/Tour360data/thesun_01_25/desktop/1.jpg",
+        "/regalia-assets/Tour360data/thesun_01_25/desktop/2.jpg",
+        "/regalia-assets/Tour360data/thesun_01_25/desktop/3.jpg",
+        "/regalia-assets/Tour360data/thesun_01_25/desktop/4.jpg",
+        "/regalia-assets/Tour360data/thesun_01_25/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1395,12 +1395,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/thesun_04_28/mobile/0.jpg",
-        "/regalia-assets/Tour360data/thesun_04_28/mobile/1.jpg",
-        "/regalia-assets/Tour360data/thesun_04_28/mobile/2.jpg",
-        "/regalia-assets/Tour360data/thesun_04_28/mobile/3.jpg",
-        "/regalia-assets/Tour360data/thesun_04_28/mobile/4.jpg",
-        "/regalia-assets/Tour360data/thesun_04_28/mobile/5.jpg"
+        "/regalia-assets/Tour360data/thesun_04_28/desktop/0.jpg",
+        "/regalia-assets/Tour360data/thesun_04_28/desktop/1.jpg",
+        "/regalia-assets/Tour360data/thesun_04_28/desktop/2.jpg",
+        "/regalia-assets/Tour360data/thesun_04_28/desktop/3.jpg",
+        "/regalia-assets/Tour360data/thesun_04_28/desktop/4.jpg",
+        "/regalia-assets/Tour360data/thesun_04_28/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1428,12 +1428,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/thesun_03_27/mobile/0.jpg",
-        "/regalia-assets/Tour360data/thesun_03_27/mobile/1.jpg",
-        "/regalia-assets/Tour360data/thesun_03_27/mobile/2.jpg",
-        "/regalia-assets/Tour360data/thesun_03_27/mobile/3.jpg",
-        "/regalia-assets/Tour360data/thesun_03_27/mobile/4.jpg",
-        "/regalia-assets/Tour360data/thesun_03_27/mobile/5.jpg"
+        "/regalia-assets/Tour360data/thesun_03_27/desktop/0.jpg",
+        "/regalia-assets/Tour360data/thesun_03_27/desktop/1.jpg",
+        "/regalia-assets/Tour360data/thesun_03_27/desktop/2.jpg",
+        "/regalia-assets/Tour360data/thesun_03_27/desktop/3.jpg",
+        "/regalia-assets/Tour360data/thesun_03_27/desktop/4.jpg",
+        "/regalia-assets/Tour360data/thesun_03_27/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1461,12 +1461,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/themoon_02_24/mobile/0.jpg",
-        "/regalia-assets/Tour360data/themoon_02_24/mobile/1.jpg",
-        "/regalia-assets/Tour360data/themoon_02_24/mobile/2.jpg",
-        "/regalia-assets/Tour360data/themoon_02_24/mobile/3.jpg",
-        "/regalia-assets/Tour360data/themoon_02_24/mobile/4.jpg",
-        "/regalia-assets/Tour360data/themoon_02_24/mobile/5.jpg"
+        "/regalia-assets/Tour360data/themoon_02_24/desktop/0.jpg",
+        "/regalia-assets/Tour360data/themoon_02_24/desktop/1.jpg",
+        "/regalia-assets/Tour360data/themoon_02_24/desktop/2.jpg",
+        "/regalia-assets/Tour360data/themoon_02_24/desktop/3.jpg",
+        "/regalia-assets/Tour360data/themoon_02_24/desktop/4.jpg",
+        "/regalia-assets/Tour360data/themoon_02_24/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1494,12 +1494,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/themoon_01_23/mobile/0.jpg",
-        "/regalia-assets/Tour360data/themoon_01_23/mobile/1.jpg",
-        "/regalia-assets/Tour360data/themoon_01_23/mobile/2.jpg",
-        "/regalia-assets/Tour360data/themoon_01_23/mobile/3.jpg",
-        "/regalia-assets/Tour360data/themoon_01_23/mobile/4.jpg",
-        "/regalia-assets/Tour360data/themoon_01_23/mobile/5.jpg"
+        "/regalia-assets/Tour360data/themoon_01_23/desktop/0.jpg",
+        "/regalia-assets/Tour360data/themoon_01_23/desktop/1.jpg",
+        "/regalia-assets/Tour360data/themoon_01_23/desktop/2.jpg",
+        "/regalia-assets/Tour360data/themoon_01_23/desktop/3.jpg",
+        "/regalia-assets/Tour360data/themoon_01_23/desktop/4.jpg",
+        "/regalia-assets/Tour360data/themoon_01_23/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1527,12 +1527,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/starnight_01_20/mobile/0.jpg",
-        "/regalia-assets/Tour360data/starnight_01_20/mobile/1.jpg",
-        "/regalia-assets/Tour360data/starnight_01_20/mobile/2.jpg",
-        "/regalia-assets/Tour360data/starnight_01_20/mobile/3.jpg",
-        "/regalia-assets/Tour360data/starnight_01_20/mobile/4.jpg",
-        "/regalia-assets/Tour360data/starnight_01_20/mobile/5.jpg"
+        "/regalia-assets/Tour360data/starnight_01_20/desktop/0.jpg",
+        "/regalia-assets/Tour360data/starnight_01_20/desktop/1.jpg",
+        "/regalia-assets/Tour360data/starnight_01_20/desktop/2.jpg",
+        "/regalia-assets/Tour360data/starnight_01_20/desktop/3.jpg",
+        "/regalia-assets/Tour360data/starnight_01_20/desktop/4.jpg",
+        "/regalia-assets/Tour360data/starnight_01_20/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1569,12 +1569,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/starnight_02_21/mobile/0.jpg",
-        "/regalia-assets/Tour360data/starnight_02_21/mobile/1.jpg",
-        "/regalia-assets/Tour360data/starnight_02_21/mobile/2.jpg",
-        "/regalia-assets/Tour360data/starnight_02_21/mobile/3.jpg",
-        "/regalia-assets/Tour360data/starnight_02_21/mobile/4.jpg",
-        "/regalia-assets/Tour360data/starnight_02_21/mobile/5.jpg"
+        "/regalia-assets/Tour360data/starnight_02_21/desktop/0.jpg",
+        "/regalia-assets/Tour360data/starnight_02_21/desktop/1.jpg",
+        "/regalia-assets/Tour360data/starnight_02_21/desktop/2.jpg",
+        "/regalia-assets/Tour360data/starnight_02_21/desktop/3.jpg",
+        "/regalia-assets/Tour360data/starnight_02_21/desktop/4.jpg",
+        "/regalia-assets/Tour360data/starnight_02_21/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1602,12 +1602,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/lobbybar_19/mobile/0.jpg",
-        "/regalia-assets/Tour360data/lobbybar_19/mobile/1.jpg",
-        "/regalia-assets/Tour360data/lobbybar_19/mobile/2.jpg",
-        "/regalia-assets/Tour360data/lobbybar_19/mobile/3.jpg",
-        "/regalia-assets/Tour360data/lobbybar_19/mobile/4.jpg",
-        "/regalia-assets/Tour360data/lobbybar_19/mobile/5.jpg"
+        "/regalia-assets/Tour360data/lobbybar_19/desktop/0.jpg",
+        "/regalia-assets/Tour360data/lobbybar_19/desktop/1.jpg",
+        "/regalia-assets/Tour360data/lobbybar_19/desktop/2.jpg",
+        "/regalia-assets/Tour360data/lobbybar_19/desktop/3.jpg",
+        "/regalia-assets/Tour360data/lobbybar_19/desktop/4.jpg",
+        "/regalia-assets/Tour360data/lobbybar_19/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1635,12 +1635,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/reception_34/mobile/0.jpg",
-        "/regalia-assets/Tour360data/reception_34/mobile/1.jpg",
-        "/regalia-assets/Tour360data/reception_34/mobile/2.jpg",
-        "/regalia-assets/Tour360data/reception_34/mobile/3.jpg",
-        "/regalia-assets/Tour360data/reception_34/mobile/4.jpg",
-        "/regalia-assets/Tour360data/reception_34/mobile/5.jpg"
+        "/regalia-assets/Tour360data/reception_34/desktop/0.jpg",
+        "/regalia-assets/Tour360data/reception_34/desktop/1.jpg",
+        "/regalia-assets/Tour360data/reception_34/desktop/2.jpg",
+        "/regalia-assets/Tour360data/reception_34/desktop/3.jpg",
+        "/regalia-assets/Tour360data/reception_34/desktop/4.jpg",
+        "/regalia-assets/Tour360data/reception_34/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1677,12 +1677,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/footmassage_30/mobile/0.jpg",
-        "/regalia-assets/Tour360data/footmassage_30/mobile/1.jpg",
-        "/regalia-assets/Tour360data/footmassage_30/mobile/2.jpg",
-        "/regalia-assets/Tour360data/footmassage_30/mobile/3.jpg",
-        "/regalia-assets/Tour360data/footmassage_30/mobile/4.jpg",
-        "/regalia-assets/Tour360data/footmassage_30/mobile/5.jpg"
+        "/regalia-assets/Tour360data/footmassage_30/desktop/0.jpg",
+        "/regalia-assets/Tour360data/footmassage_30/desktop/1.jpg",
+        "/regalia-assets/Tour360data/footmassage_30/desktop/2.jpg",
+        "/regalia-assets/Tour360data/footmassage_30/desktop/3.jpg",
+        "/regalia-assets/Tour360data/footmassage_30/desktop/4.jpg",
+        "/regalia-assets/Tour360data/footmassage_30/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1737,12 +1737,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/massage_02_33/mobile/0.jpg",
-        "/regalia-assets/Tour360data/massage_02_33/mobile/1.jpg",
-        "/regalia-assets/Tour360data/massage_02_33/mobile/2.jpg",
-        "/regalia-assets/Tour360data/massage_02_33/mobile/3.jpg",
-        "/regalia-assets/Tour360data/massage_02_33/mobile/4.jpg",
-        "/regalia-assets/Tour360data/massage_02_33/mobile/5.jpg"
+        "/regalia-assets/Tour360data/massage_02_33/desktop/0.jpg",
+        "/regalia-assets/Tour360data/massage_02_33/desktop/1.jpg",
+        "/regalia-assets/Tour360data/massage_02_33/desktop/2.jpg",
+        "/regalia-assets/Tour360data/massage_02_33/desktop/3.jpg",
+        "/regalia-assets/Tour360data/massage_02_33/desktop/4.jpg",
+        "/regalia-assets/Tour360data/massage_02_33/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1770,12 +1770,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/sauna_35/mobile/0.jpg",
-        "/regalia-assets/Tour360data/sauna_35/mobile/1.jpg",
-        "/regalia-assets/Tour360data/sauna_35/mobile/2.jpg",
-        "/regalia-assets/Tour360data/sauna_35/mobile/3.jpg",
-        "/regalia-assets/Tour360data/sauna_35/mobile/4.jpg",
-        "/regalia-assets/Tour360data/sauna_35/mobile/5.jpg"
+        "/regalia-assets/Tour360data/sauna_35/desktop/0.jpg",
+        "/regalia-assets/Tour360data/sauna_35/desktop/1.jpg",
+        "/regalia-assets/Tour360data/sauna_35/desktop/2.jpg",
+        "/regalia-assets/Tour360data/sauna_35/desktop/3.jpg",
+        "/regalia-assets/Tour360data/sauna_35/desktop/4.jpg",
+        "/regalia-assets/Tour360data/sauna_35/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1803,12 +1803,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/jacuzzi_31/mobile/0.jpg",
-        "/regalia-assets/Tour360data/jacuzzi_31/mobile/1.jpg",
-        "/regalia-assets/Tour360data/jacuzzi_31/mobile/2.jpg",
-        "/regalia-assets/Tour360data/jacuzzi_31/mobile/3.jpg",
-        "/regalia-assets/Tour360data/jacuzzi_31/mobile/4.jpg",
-        "/regalia-assets/Tour360data/jacuzzi_31/mobile/5.jpg"
+        "/regalia-assets/Tour360data/jacuzzi_31/desktop/0.jpg",
+        "/regalia-assets/Tour360data/jacuzzi_31/desktop/1.jpg",
+        "/regalia-assets/Tour360data/jacuzzi_31/desktop/2.jpg",
+        "/regalia-assets/Tour360data/jacuzzi_31/desktop/3.jpg",
+        "/regalia-assets/Tour360data/jacuzzi_31/desktop/4.jpg",
+        "/regalia-assets/Tour360data/jacuzzi_31/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1836,12 +1836,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/conference_01_71/mobile/0.jpg",
-        "/regalia-assets/Tour360data/conference_01_71/mobile/1.jpg",
-        "/regalia-assets/Tour360data/conference_01_71/mobile/2.jpg",
-        "/regalia-assets/Tour360data/conference_01_71/mobile/3.jpg",
-        "/regalia-assets/Tour360data/conference_01_71/mobile/4.jpg",
-        "/regalia-assets/Tour360data/conference_01_71/mobile/5.jpg"
+        "/regalia-assets/Tour360data/conference_01_71/desktop/0.jpg",
+        "/regalia-assets/Tour360data/conference_01_71/desktop/1.jpg",
+        "/regalia-assets/Tour360data/conference_01_71/desktop/2.jpg",
+        "/regalia-assets/Tour360data/conference_01_71/desktop/3.jpg",
+        "/regalia-assets/Tour360data/conference_01_71/desktop/4.jpg",
+        "/regalia-assets/Tour360data/conference_01_71/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1869,12 +1869,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/conference_02_72/mobile/0.jpg",
-        "/regalia-assets/Tour360data/conference_02_72/mobile/1.jpg",
-        "/regalia-assets/Tour360data/conference_02_72/mobile/2.jpg",
-        "/regalia-assets/Tour360data/conference_02_72/mobile/3.jpg",
-        "/regalia-assets/Tour360data/conference_02_72/mobile/4.jpg",
-        "/regalia-assets/Tour360data/conference_02_72/mobile/5.jpg"
+        "/regalia-assets/Tour360data/conference_02_72/desktop/0.jpg",
+        "/regalia-assets/Tour360data/conference_02_72/desktop/1.jpg",
+        "/regalia-assets/Tour360data/conference_02_72/desktop/2.jpg",
+        "/regalia-assets/Tour360data/conference_02_72/desktop/3.jpg",
+        "/regalia-assets/Tour360data/conference_02_72/desktop/4.jpg",
+        "/regalia-assets/Tour360data/conference_02_72/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1903,12 +1903,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/gym_01_73/mobile/0.jpg",
-        "/regalia-assets/Tour360data/gym_01_73/mobile/1.jpg",
-        "/regalia-assets/Tour360data/gym_01_73/mobile/2.jpg",
-        "/regalia-assets/Tour360data/gym_01_73/mobile/3.jpg",
-        "/regalia-assets/Tour360data/gym_01_73/mobile/4.jpg",
-        "/regalia-assets/Tour360data/gym_01_73/mobile/5.jpg"
+        "/regalia-assets/Tour360data/gym_01_73/desktop/0.jpg",
+        "/regalia-assets/Tour360data/gym_01_73/desktop/1.jpg",
+        "/regalia-assets/Tour360data/gym_01_73/desktop/2.jpg",
+        "/regalia-assets/Tour360data/gym_01_73/desktop/3.jpg",
+        "/regalia-assets/Tour360data/gym_01_73/desktop/4.jpg",
+        "/regalia-assets/Tour360data/gym_01_73/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1945,12 +1945,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/gym_02_74/mobile/0.jpg",
-        "/regalia-assets/Tour360data/gym_02_74/mobile/1.jpg",
-        "/regalia-assets/Tour360data/gym_02_74/mobile/2.jpg",
-        "/regalia-assets/Tour360data/gym_02_74/mobile/3.jpg",
-        "/regalia-assets/Tour360data/gym_02_74/mobile/4.jpg",
-        "/regalia-assets/Tour360data/gym_02_74/mobile/5.jpg"
+        "/regalia-assets/Tour360data/gym_02_74/desktop/0.jpg",
+        "/regalia-assets/Tour360data/gym_02_74/desktop/1.jpg",
+        "/regalia-assets/Tour360data/gym_02_74/desktop/2.jpg",
+        "/regalia-assets/Tour360data/gym_02_74/desktop/3.jpg",
+        "/regalia-assets/Tour360data/gym_02_74/desktop/4.jpg",
+        "/regalia-assets/Tour360data/gym_02_74/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -1978,12 +1978,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/kidsclub_75/mobile/0.jpg",
-        "/regalia-assets/Tour360data/kidsclub_75/mobile/1.jpg",
-        "/regalia-assets/Tour360data/kidsclub_75/mobile/2.jpg",
-        "/regalia-assets/Tour360data/kidsclub_75/mobile/3.jpg",
-        "/regalia-assets/Tour360data/kidsclub_75/mobile/4.jpg",
-        "/regalia-assets/Tour360data/kidsclub_75/mobile/5.jpg"
+        "/regalia-assets/Tour360data/kidsclub_75/desktop/0.jpg",
+        "/regalia-assets/Tour360data/kidsclub_75/desktop/1.jpg",
+        "/regalia-assets/Tour360data/kidsclub_75/desktop/2.jpg",
+        "/regalia-assets/Tour360data/kidsclub_75/desktop/3.jpg",
+        "/regalia-assets/Tour360data/kidsclub_75/desktop/4.jpg",
+        "/regalia-assets/Tour360data/kidsclub_75/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -2020,12 +2020,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/pool_01_76/mobile/0.jpg",
-        "/regalia-assets/Tour360data/pool_01_76/mobile/1.jpg",
-        "/regalia-assets/Tour360data/pool_01_76/mobile/2.jpg",
-        "/regalia-assets/Tour360data/pool_01_76/mobile/3.jpg",
-        "/regalia-assets/Tour360data/pool_01_76/mobile/4.jpg",
-        "/regalia-assets/Tour360data/pool_01_76/mobile/5.jpg"
+        "/regalia-assets/Tour360data/pool_01_76/desktop/0.jpg",
+        "/regalia-assets/Tour360data/pool_01_76/desktop/1.jpg",
+        "/regalia-assets/Tour360data/pool_01_76/desktop/2.jpg",
+        "/regalia-assets/Tour360data/pool_01_76/desktop/3.jpg",
+        "/regalia-assets/Tour360data/pool_01_76/desktop/4.jpg",
+        "/regalia-assets/Tour360data/pool_01_76/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -2071,12 +2071,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/pool_02_77/mobile/0.jpg",
-        "/regalia-assets/Tour360data/pool_02_77/mobile/1.jpg",
-        "/regalia-assets/Tour360data/pool_02_77/mobile/2.jpg",
-        "/regalia-assets/Tour360data/pool_02_77/mobile/3.jpg",
-        "/regalia-assets/Tour360data/pool_02_77/mobile/4.jpg",
-        "/regalia-assets/Tour360data/pool_02_77/mobile/5.jpg"
+        "/regalia-assets/Tour360data/pool_02_77/desktop/0.jpg",
+        "/regalia-assets/Tour360data/pool_02_77/desktop/1.jpg",
+        "/regalia-assets/Tour360data/pool_02_77/desktop/2.jpg",
+        "/regalia-assets/Tour360data/pool_02_77/desktop/3.jpg",
+        "/regalia-assets/Tour360data/pool_02_77/desktop/4.jpg",
+        "/regalia-assets/Tour360data/pool_02_77/desktop/5.jpg"
       ]
     },
     "hotspots": [
@@ -2122,12 +2122,12 @@ export const rooms = [
     "image": {
       "type": "cubefaces",
       "faces": [
-        "/regalia-assets/Tour360data/businesscenter_10/mobile/0.jpg",
-        "/regalia-assets/Tour360data/businesscenter_10/mobile/1.jpg",
-        "/regalia-assets/Tour360data/businesscenter_10/mobile/2.jpg",
-        "/regalia-assets/Tour360data/businesscenter_10/mobile/3.jpg",
-        "/regalia-assets/Tour360data/businesscenter_10/mobile/4.jpg",
-        "/regalia-assets/Tour360data/businesscenter_10/mobile/5.jpg"
+        "/regalia-assets/Tour360data/businesscenter_10/desktop/0.jpg",
+        "/regalia-assets/Tour360data/businesscenter_10/desktop/1.jpg",
+        "/regalia-assets/Tour360data/businesscenter_10/desktop/2.jpg",
+        "/regalia-assets/Tour360data/businesscenter_10/desktop/3.jpg",
+        "/regalia-assets/Tour360data/businesscenter_10/desktop/4.jpg",
+        "/regalia-assets/Tour360data/businesscenter_10/desktop/5.jpg"
       ]
     },
     "hotspots": [

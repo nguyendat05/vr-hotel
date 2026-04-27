@@ -64,7 +64,10 @@ export function useRoomTexture(imageUrl, preloadUrls = []) {
             cubeTex.dispose()
             return
           }
-          cubeTex.colorSpace = THREE.SRGBColorSpace
+          cubeTex.colorSpace = THREE.SRGBColorSpace;
+          cubeTex.generateMipmaps = false;
+          cubeTex.minFilter = THREE.LinearFilter;
+          cubeTex.magFilter = THREE.LinearFilter;
           loadedCubeTexture = cubeTex
           setCubeTexture(cubeTex)
           setLoading(false)
