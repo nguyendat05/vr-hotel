@@ -10,6 +10,7 @@ const MIN_CAMERA_FOV = 38
 const MAX_CAMERA_FOV = 92
 const CAMERA_FOV_STEP = 6
 const DEFAULT_CAMERA_FOV = MIN_CAMERA_FOV + CAMERA_FOV_STEP * 2
+const DEFAULT_MUSIC_URL = 'https://bucket-xichtho.hn.ss.bfcplatform.vn/situ.vn/good_b_music-ambient-piano-and-strings-10711.mp3'
 
 function directionToYawPitch([x, y, z]) {
   const yaw = (Math.atan2(x, -z) * 180) / Math.PI
@@ -45,12 +46,17 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [guideOpen, setGuideOpen] = useState(false)
   const [isFullscreen, setIsFullscreen] = useState(false)
-  const [musicOn, setMusicOn] = useState(false)
+  const [musicOn, setMusicOn] = useState(true)
   const [viewAngles, setViewAngles] = useState({ yaw: 0, pitch: 0 })
   const [pickedAngles, setPickedAngles] = useState(null)
   const roomNavTimers = useRef([])
   const guideRunRef = useRef(0)
   const bgMusicRef = useRef(null)
+  const autoplayRetryRef = useRef(false)
+  const backgroundMusicUrl = useMemo(() => {
+    const urlFromQuery = new URLSearchParams(window.location.search).get('bgm')
+    return urlFromQuery && urlFromQuery.trim().length > 0 ? urlFromQuery : DEFAULT_MUSIC_URL
+  }, [])
   const roomIdSet = useMemo(() => new Set(roomCatalog.map((room) => room.id)), [])
   const zoneMap = useMemo(() => new Map(ZONE_CONFIGS.map((zone) => [zone.id, zone])), [])
   const activeZone = zoneMap.get(guideZoneId) ?? ZONE_CONFIGS[0]
@@ -105,22 +111,55 @@ export default function App() {
     return () => document.removeEventListener('fullscreenchange', syncFullscreen)
   }, [])
   useEffect(() => {
-    const audio = new Audio('/regalia-assets/audio/background.mp3')
+    const audio = new Audio(backgroundMusicUrl)
     audio.loop = true
     audio.volume = 0.32
+    audio.preload = 'auto'
     bgMusicRef.current = audio
     return () => {
       audio.pause()
       bgMusicRef.current = null
+      autoplayRetryRef.current = false
     }
-  }, [])
+  }, [backgroundMusicUrl])
   useEffect(() => {
     const audio = bgMusicRef.current
     if (!audio) return
     if (musicOn) {
-      audio.play().catch(() => setMusicOn(false))
+      audio.play()
+        .then(() => {
+          autoplayRetryRef.current = false
+        })
+        .catch(() => {
+          // Browser may block autoplay; retry on first user interaction.
+          autoplayRetryRef.current = true
+        })
     } else {
       audio.pause()
+      autoplayRetryRef.current = false
+    }
+  }, [musicOn])
+  useEffect(() => {
+    const resumeAfterGesture = () => {
+      if (!musicOn || !autoplayRetryRef.current) return
+      const audio = bgMusicRef.current
+      if (!audio) return
+      audio.play()
+        .then(() => {
+          autoplayRetryRef.current = false
+        })
+        .catch(() => {
+          // Keep waiting for the next gesture.
+        })
+    }
+
+    window.addEventListener('pointerdown', resumeAfterGesture, { passive: true })
+    window.addEventListener('keydown', resumeAfterGesture)
+    window.addEventListener('touchstart', resumeAfterGesture, { passive: true })
+    return () => {
+      window.removeEventListener('pointerdown', resumeAfterGesture)
+      window.removeEventListener('keydown', resumeAfterGesture)
+      window.removeEventListener('touchstart', resumeAfterGesture)
     }
   }, [musicOn])
   useEffect(() => {
