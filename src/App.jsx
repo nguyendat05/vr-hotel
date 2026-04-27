@@ -43,10 +43,14 @@ export default function App() {
   const [cameraFov, setCameraFov] = useState(DEFAULT_CAMERA_FOV)
   const [activeGroupId, setActiveGroupId] = useState(sourceTourGroups[0]?.id ?? '')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [guideOpen, setGuideOpen] = useState(false)
+  const [isFullscreen, setIsFullscreen] = useState(false)
+  const [musicOn, setMusicOn] = useState(false)
   const [viewAngles, setViewAngles] = useState({ yaw: 0, pitch: 0 })
   const [pickedAngles, setPickedAngles] = useState(null)
   const roomNavTimers = useRef([])
   const guideRunRef = useRef(0)
+  const bgMusicRef = useRef(null)
   const roomIdSet = useMemo(() => new Set(roomCatalog.map((room) => room.id)), [])
   const zoneMap = useMemo(() => new Map(ZONE_CONFIGS.map((zone) => [zone.id, zone])), [])
   const activeZone = zoneMap.get(guideZoneId) ?? ZONE_CONFIGS[0]
@@ -94,6 +98,39 @@ export default function App() {
     const ownerGroup = roomGroupMap.get(activeRoomId)
     if (ownerGroup) setActiveGroupId(ownerGroup)
   }, [activeRoomId, roomGroupMap])
+  useEffect(() => {
+    const syncFullscreen = () => setIsFullscreen(Boolean(document.fullscreenElement))
+    syncFullscreen()
+    document.addEventListener('fullscreenchange', syncFullscreen)
+    return () => document.removeEventListener('fullscreenchange', syncFullscreen)
+  }, [])
+  useEffect(() => {
+    const audio = new Audio('/regalia-assets/audio/background.mp3')
+    audio.loop = true
+    audio.volume = 0.32
+    bgMusicRef.current = audio
+    return () => {
+      audio.pause()
+      bgMusicRef.current = null
+    }
+  }, [])
+  useEffect(() => {
+    const audio = bgMusicRef.current
+    if (!audio) return
+    if (musicOn) {
+      audio.play().catch(() => setMusicOn(false))
+    } else {
+      audio.pause()
+    }
+  }, [musicOn])
+  useEffect(() => {
+    if (!guideOpen) return
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') setGuideOpen(false)
+    }
+    window.addEventListener('keydown', handleEsc)
+    return () => window.removeEventListener('keydown', handleEsc)
+  }, [guideOpen])
 
   /** Chuyển cảnh có fade — cảm giác “đi” hơn là đổi ảnh tức thì. */
   const transitionToRoom = useCallback(
@@ -137,7 +174,7 @@ export default function App() {
       graph.set(room.id, new Set())
     })
     roomCatalog.forEach((room) => {
-      ;(room.hotspots ?? []).forEach((hotspot) => {
+      ; (room.hotspots ?? []).forEach((hotspot) => {
         if (hotspot?.type === 'navigation' && typeof hotspot?.target === 'string' && roomIdSet.has(hotspot.target)) {
           graph.get(room.id)?.add(hotspot.target)
           graph.get(hotspot.target)?.add(room.id)
@@ -292,6 +329,13 @@ export default function App() {
       console.log('[VR Hotel] Copy defaultView snippet:', snippet)
     }
   }, [cameraFov, viewAngles])
+  const toggleFullscreen = useCallback(async () => {
+    if (!document.fullscreenElement) {
+      await document.documentElement.requestFullscreen()
+      return
+    }
+    await document.exitFullscreen()
+  }, [])
 
   const adjacentPreloadUrls = useMemo(() => {
     const nextRoomIds = Array.from(navigationGraph.get(activeRoomId) ?? [])
@@ -324,13 +368,131 @@ export default function App() {
               onViewAnglesChange={handleViewAnglesChange}
             />
           </div>
-          <button
-            type="button"
-            className={`viewer-menu-toggle${menuOpen ? ' viewer-menu-toggle--open' : ''}`}
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            {menuOpen ? 'Close menu' : 'Menu'}
-          </button>
+          <div className="viewer-bottom-menu" aria-label="Thanh điều hướng nhanh">
+            <button
+              type="button"
+              className={`viewer-bottom-menu__btn viewer-bottom-menu__btn--tool${menuOpen ? ' viewer-bottom-menu__btn--active' : ''}`}
+              onClick={() => setMenuOpen((prev) => !prev)}
+              aria-expanded={menuOpen}
+              aria-label={menuOpen ? 'Đóng menu phòng' : 'Mở menu phòng'}
+            >
+              <span className="viewer-bottom-menu__icon" aria-hidden="true">☰</span>
+              <span className="viewer-bottom-menu__text">Menu</span>
+            </button>
+            <button
+              type="button"
+              className={`viewer-bottom-menu__btn viewer-bottom-menu__btn--tool${isFullscreen ? ' viewer-bottom-menu__btn--active' : ''}`}
+              onClick={toggleFullscreen}
+            >
+              <span className="viewer-bottom-menu__icon" aria-hidden="true">⛶</span>
+              <span className="viewer-bottom-menu__text">Full</span>
+            </button>
+            <button
+              type="button"
+              className={`viewer-bottom-menu__btn viewer-bottom-menu__btn--tool${musicOn ? ' viewer-bottom-menu__btn--active' : ''}`}
+              onClick={() => setMusicOn((prev) => !prev)}
+            >
+              <span className="viewer-bottom-menu__icon" aria-hidden="true">{musicOn ? '♪' : '♫'}</span>
+              <span className="viewer-bottom-menu__text">Nhạc</span>
+            </button>
+            <button
+              type="button"
+              className={`viewer-bottom-menu__btn viewer-bottom-menu__btn--tool${guideOpen ? ' viewer-bottom-menu__btn--active' : ''}`}
+              onClick={() => setGuideOpen((prev) => !prev)}
+            >
+              <span className="viewer-bottom-menu__icon" aria-hidden="true">?</span>
+              <span className="viewer-bottom-menu__text">Hướng dẫn</span>
+            </button>
+          </div>
+          {guideOpen && (
+            <section className="viewer-help-overlay" aria-label="Hướng dẫn thao tác tham quan">
+              <button type="button" className="viewer-help-overlay__close" onClick={() => setGuideOpen(false)} aria-label="Đóng hướng dẫn">
+                ×
+              </button>
+              <div className="viewer-help-overlay__content">
+                <p className="viewer-help-overlay__title">HƯỚNG DẪN THAO TÁC</p>
+                <div className="viewer-help-overlay__grid">
+                  <article className="viewer-help-card">
+                    <p className="viewer-help-card__heading">TRÊN MÀN HÌNH CẢM ỨNG</p>
+                    <div className="viewer-help-card__icon-row">
+                      <div className="viewer-help-step">
+                        <svg className="viewer-help-svg" viewBox="0 0 64 64" aria-hidden="true">
+                          <path d="M8 12h10M8 12l3-3M8 12l3 3M56 12H46M56 12l-3-3M56 12l-3 3" />
+                          <path d="M20 32v-8c0-2 2-3 3-3s3 1 3 3v8" />
+                          <path d="M26 31v-12c0-2 2-3 3-3s3 1 3 3v12" />
+                          <path d="M32 31v-10c0-2 2-3 3-3s3 1 3 3v10" />
+                          <path d="M38 32v-6c0-2 2-3 3-3s3 1 3 3v10c0 9-6 15-15 15h-2c-8 0-14-6-14-14v-4c0-3 2-5 5-5h2" />
+                        </svg>
+                        <p className="viewer-help-step__label">Phóng to / thu nhỏ</p>
+                      </div>
+                      <div className="viewer-help-step">
+                        <svg className="viewer-help-svg" viewBox="0 0 64 64" aria-hidden="true">
+                          <path d="M32 6v10M32 58V48M6 32h10M58 32H48" />
+                          <path d="M32 4l-3 3M32 4l3 3M32 60l-3-3M32 60l3-3" />
+                          <path d="M4 32l3-3M4 32l3 3M60 32l-3-3M60 32l-3 3" />
+                          <path d="M20 32v-8c0-2 2-3 3-3s3 1 3 3v8" />
+                          <path d="M26 31v-12c0-2 2-3 3-3s3 1 3 3v12" />
+                          <path d="M32 31v-10c0-2 2-3 3-3s3 1 3 3v10" />
+                          <path d="M38 32v-6c0-2 2-3 3-3s3 1 3 3v10c0 9-6 15-15 15h-2c-8 0-14-6-14-14v-4c0-3 2-5 5-5h2" />
+                        </svg>
+                        <p className="viewer-help-step__label">Di chuyển</p>
+                      </div>
+                    </div>
+                    <p className="viewer-help-card__line">Vuốt 1 ngón tay để xoay cảnh</p>
+                  </article>
+                  <article className="viewer-help-card">
+                    <p className="viewer-help-card__heading">THAO TÁC TRÊN CHUỘT</p>
+                    <div className="viewer-help-card__icon-row">
+                      <div className="viewer-help-step">
+                        <svg className="viewer-help-svg" viewBox="0 0 56 86" aria-hidden="true">
+                          <path d="M8 8h40" />
+                          <path d="M8 8l5-4M8 8l5 4M48 8l-5-4M48 8l-5 4" />
+                          <rect x="8" y="14" width="40" height="68" rx="20" ry="20" />
+                          <line x1="28" y1="16" x2="28" y2="44" />
+                          <path d="M28 24v10" />
+                        </svg>
+                        <p className="viewer-help-step__label">Nhấn + kéo để di chuyển</p>
+                      </div>
+                      <div className="viewer-help-step">
+                        <svg className="viewer-help-svg" viewBox="0 0 56 76" aria-hidden="true">
+                          <rect x="8" y="4" width="40" height="68" rx="20" ry="20" />
+                          <line x1="28" y1="6" x2="28" y2="34" />
+                          <rect x="23" y="13" width="10" height="16" rx="5" ry="5" />
+                        </svg>
+                        <p className="viewer-help-step__label">Cuộn để phóng to / thu nhỏ</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article className="viewer-help-card">
+                    <p className="viewer-help-card__heading">THAO TÁC TRÊN BÀN PHÍM</p>
+                    <div className="viewer-help-card__icon-row">
+                      <svg className="viewer-help-svg viewer-help-svg--keys" viewBox="0 0 140 72" aria-hidden="true">
+                        <rect x="52" y="2" width="36" height="28" rx="6" />
+                        <rect x="4" y="38" width="36" height="28" rx="6" />
+                        <rect x="52" y="38" width="36" height="28" rx="6" />
+                        <rect x="100" y="38" width="36" height="28" rx="6" />
+                        <path d="M70 20v-10M70 10l-4 4M70 10l4 4" />
+                        <path d="M22 52h-10M12 52l4-4M12 52l4 4" />
+                        <path d="M70 48v10M70 58l-4-4M70 58l4-4" />
+                        <path d="M118 52h10M128 52l-4-4M128 52l-4 4" />
+                      </svg>
+                    </div>
+                    <p className="viewer-help-card__line">Dùng phím mũi tên để di chuyển</p>
+                  </article>
+                  <article className="viewer-help-card">
+                    <p className="viewer-help-card__heading">XEM CÁC VỊ TRÍ KHÁC</p>
+                    <div className="viewer-help-card__icon-row">
+                      <svg className="viewer-help-svg viewer-help-svg--spot" viewBox="0 0 88 88" aria-hidden="true">
+                        <circle cx="44" cy="44" r="34" />
+                        <circle cx="44" cy="44" r="17" />
+                      </svg>
+                    </div>
+                    <p className="viewer-help-card__line">Bấm để chuyển qua vị trí khác</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+          )}
           <PositionGuide
             visible={false}
             zoneOptions={ZONE_CONFIGS}
@@ -348,7 +510,8 @@ export default function App() {
             guidedRoute={guidedRoute}
             guidedStep={guidedStep}
           />
-          <section className="hotspot-debug-panel" aria-label="Debug default view pano">
+          {/* Debug default view pano */}
+          {/* <section className="hotspot-debug-panel" aria-label="Debug default view pano">
             <p className="hotspot-debug-panel__title">Default view pano</p>
             <p className="hotspot-debug-panel__line">
               Tâm camera: yaw <b>{viewAngles.yaw}</b>, pitch <b>{viewAngles.pitch}</b>
@@ -362,7 +525,7 @@ export default function App() {
             <button type="button" className="hotspot-debug-panel__copy" onClick={copyDefaultViewSnippet}>
               Copy snippet defaultView
             </button>
-          </section>
+          </section> */}
           <RoomSidebar
             open={menuOpen}
             onClose={() => setMenuOpen(false)}

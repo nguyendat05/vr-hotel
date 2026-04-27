@@ -41,7 +41,7 @@ export function RoomList({ onClose, rooms, groups = [], activeGroupId, onSelectG
           <div className="room-menu__views-actions">
             <span className="room-menu__count">{primaryRooms.length} viewpoints chính</span>
             <button type="button" className="room-menu__close" onClick={onClose}>
-              Close
+              CLOSE
             </button>
           </div>
         </header>

@@ -178,6 +178,90 @@ function DefaultViewSync({ sceneId, defaultView, controlsRef }) {
   return null
 }
 
+function KeyboardLookControls({ controlsRef }) {
+  const pressedRef = useRef({
+    left: false,
+    right: false,
+    up: false,
+    down: false,
+  })
+
+  useFrame((_, delta) => {
+    const controls = controlsRef.current
+    if (!controls) return
+
+    const { left, right, up, down } = pressedRef.current
+    if (!left && !right && !up && !down) return
+
+    const ROTATE_SPEED = 15.35
+    const MIN_POLAR = 0.08
+    const MAX_POLAR = Math.PI - 0.08
+    const step = ROTATE_SPEED * delta
+
+    const currentAzimuth = controls.getAzimuthalAngle()
+    const currentPolar = controls.getPolarAngle()
+    let nextAzimuth = currentAzimuth
+    let nextPolar = currentPolar
+
+    if (left) nextAzimuth += step
+    if (right) nextAzimuth -= step
+    if (up) nextPolar += step
+    if (down) nextPolar -= step
+
+    controls.setAzimuthalAngle(nextAzimuth)
+    controls.setPolarAngle(Math.max(MIN_POLAR, Math.min(MAX_POLAR, nextPolar)))
+    controls.update()
+  })
+
+  useEffect(() => {
+    const shouldIgnore = (target) => {
+      if (!(target instanceof HTMLElement)) return false
+      const tag = target.tagName
+      return tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || target.isContentEditable
+    }
+
+    const setPressed = (key, value) => {
+      if (key === 'ArrowLeft') pressedRef.current.left = value
+      else if (key === 'ArrowRight') pressedRef.current.right = value
+      else if (key === 'ArrowUp') pressedRef.current.up = value
+      else if (key === 'ArrowDown') pressedRef.current.down = value
+      else return false
+      return true
+    }
+
+    const handleKeyDown = (event) => {
+      if (shouldIgnore(event.target)) return
+      const matched = setPressed(event.key, true)
+      if (!matched) return
+      event.preventDefault()
+    }
+
+    const handleKeyUp = (event) => {
+      const matched = setPressed(event.key, false)
+      if (!matched) return
+      event.preventDefault()
+    }
+
+    const handleWindowBlur = () => {
+      pressedRef.current.left = false
+      pressedRef.current.right = false
+      pressedRef.current.up = false
+      pressedRef.current.down = false
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    window.addEventListener('keyup', handleKeyUp)
+    window.addEventListener('blur', handleWindowBlur)
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+      window.removeEventListener('keyup', handleKeyUp)
+      window.removeEventListener('blur', handleWindowBlur)
+    }
+  }, [controlsRef])
+
+  return null
+}
+
 function ClickNavigationSurface({ onDirectionPick }) {
   const camera = useThree((state) => state.camera)
   const pointerStartRef = useRef(null)
@@ -246,6 +330,7 @@ export function VRScene({
       <pointLight position={[4, 6, 2]} intensity={0.8} />
       <CameraFovSync cameraFov={cameraFov} />
       <DefaultViewSync sceneId={sceneId} defaultView={defaultView} controlsRef={controlsRef} />
+      <KeyboardLookControls controlsRef={controlsRef} />
       <CameraDirectionReporter onViewAnglesChange={onViewAnglesChange} />
       {cubeTexture ? (
         <CubeBackground cubeTexture={cubeTexture} />
