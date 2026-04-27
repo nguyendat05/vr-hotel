@@ -14,7 +14,7 @@ const FLOOR_RING_SPECS = [
 const HIT_RADIUS = 0.74
 const ANGLE_HOTSPOT_DISTANCE = 8
 const ANGLE_HOTSPOT_RADIUS = 0.28
-const HOTEL_LOGO_URL = '/regalia-assets/Tour360data/pano/Images/Logo.png'
+const HOTEL_LOGO_URL = '/logo.png'
 
 function toRadians(value) {
   return (value * Math.PI) / 180
@@ -157,9 +157,9 @@ function HotspotImpl({ hotspot, floorY, onSelect }) {
           </mesh>
           {label ? (
             <Html position={[0, 0, 0]} distanceFactor={8} style={{ pointerEvents: 'none' }}>
-              <div className="hotspot-callout" style={{ '--callout-height': `${calloutHeight}px` }}>
+              <div className="hotspot-callout hotspot-callout--landmark" style={{ '--callout-height': `${calloutHeight}px` }}>
                 <span className="hotspot-callout__stem" />
-                <div className="hotspot-label hotspot-label--callout">{label}</div>
+                <div className="hotspot-label hotspot-label--callout hotspot-label--landmark">{label}</div>
               </div>
             </Html>
           ) : null}
@@ -183,14 +183,14 @@ function HotspotImpl({ hotspot, floorY, onSelect }) {
           <group ref={pulseGroupRef} />
           <Html position={[0, 0, 0]} center distanceFactor={8.8} style={{ pointerEvents: 'none' }}>
             <span className={`hotspot-logo hotspot-logo--nav hotspot-logo--rmark${hovered ? ' hotspot-logo--hovered' : ''}`}>
-              <span className="hotspot-logo__r">R</span>
+              <img src={HOTEL_LOGO_URL} alt="" />
             </span>
           </Html>
           {hovered && label ? (
             <Html position={[0, 0, 0]} distanceFactor={8} style={{ pointerEvents: 'none' }}>
-              <div className="hotspot-callout" style={{ '--callout-height': '56px' }}>
+              <div className="hotspot-callout hotspot-callout--pano15" style={{ '--callout-height': '56px' }}>
                 <span className="hotspot-callout__stem" />
-                <div className="hotspot-label hotspot-label--callout">{label}</div>
+                <div className="hotspot-label hotspot-label--callout hotspot-label--pano15">{label}</div>
               </div>
             </Html>
           ) : null}
@@ -275,7 +275,7 @@ function HotspotImpl({ hotspot, floorY, onSelect }) {
       <Html position={[0, 0.13, 0]} center distanceFactor={9} style={{ pointerEvents: 'none' }}>
         {isNavigation ? (
           <span className={`hotspot-logo hotspot-logo--nav hotspot-logo--rmark${hovered ? ' hotspot-logo--hovered' : ''}`}>
-            <span className="hotspot-logo__r">R</span>
+            <img src={HOTEL_LOGO_URL} alt="" />
           </span>
         ) : (
           <span className={`hotspot-logo${hovered ? ' hotspot-logo--hovered' : ''}`}>

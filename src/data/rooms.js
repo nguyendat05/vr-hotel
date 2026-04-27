@@ -32,7 +32,7 @@ export const rooms = [
         "pitch": -6.77,
         "coordType": "angular",
         "label": "Bãi biển, Quảng trường 02/04 - 350m",
-        "calloutHeight": 362
+        "calloutHeight": 392
       },
       {
         "id": "spotpoint219",
