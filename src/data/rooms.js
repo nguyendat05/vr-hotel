@@ -211,6 +211,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 59.59,
+      'pitch': 2.88,
+      'fov': 88,
+    },
     "id": "pano14",
     "name": "Sảnh đón khách",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano14).",
@@ -229,8 +234,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint668",
-        "yaw": 40.723207,
-        "pitch": 6.666663,
+        'yaw': -133.64,
+        'pitch': -6.44,
         "coordType": "angular",
         "label": "Sảnh đón khách",
         "type": "navigation",
@@ -238,8 +243,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint669",
-        "yaw": -29.973965,
-        "pitch": 2.35602,
+        'yaw': 148.47,
+        'pitch': -3.46,
         "coordType": "angular",
         "label": "Business center",
         "type": "navigation",
@@ -597,6 +602,11 @@ export const rooms = [
     "hotspots": []
   },
   {
+    'defaultView': {
+      'yaw': 111.44,
+      'pitch': -8.83,
+      'fov': 92,
+    },
     "id": "pano46",
     "name": "Family City View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano46).",
@@ -614,27 +624,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo904",
-        "yaw": -107.145301,
-        "pitch": -2.869583,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo904_playbtn",
-        "yaw": -107.145301,
-        "pitch": -2.869583,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo904_pausebtn",
-        "yaw": -107.145301,
-        "pitch": -2.869583,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint877",
-        "yaw": -78.570356,
-        "pitch": 0.302939,
+        'yaw': 105.63,
+        'pitch': -0.05,
         "coordType": "angular",
         "label": "Family City View",
         "type": "navigation",
@@ -643,6 +635,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 40.98,
+      'pitch': -5.78,
+      'fov': 92,
+    },
     "id": "pano47",
     "name": "Family City View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano47).",
@@ -661,8 +658,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint878",
-        "yaw": 37.695594,
-        "pitch": 4.848479,
+        'yaw': -141.46,
+        'pitch': -0.24,
         "coordType": "angular",
         "label": "Family City View",
         "type": "navigation",
@@ -671,6 +668,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 137.16,
+      'pitch': -0.54,
+      'fov': 78,
+    },
     "id": "pano48",
     "name": "Family Partial Sea View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano48).",
@@ -688,27 +690,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo905",
-        "yaw": -80.37905,
-        "pitch": -3.635042,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo905_playbtn",
-        "yaw": -80.37905,
-        "pitch": -3.635042,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo905_pausebtn",
-        "yaw": -80.37905,
-        "pitch": -3.635042,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint879",
-        "yaw": -54.650878,
-        "pitch": 0.606061,
+        'yaw': 128.98,
+        'pitch': -0.86,
         "coordType": "angular",
         "label": "Family Partial Sea View",
         "type": "navigation",
@@ -717,6 +701,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -27.78,
+      'pitch': -3.1,
+      'fov': 92,
+    },
     "id": "pano49",
     "name": "Family Partial Sea View",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano49).",
@@ -735,8 +724,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint880",
-        "yaw": -29.217957,
-        "pitch": 3.333417,
+        'yaw': 143.51,
+        'pitch': -2.86,
         "coordType": "angular",
         "label": "Family Partial Sea View",
         "type": "navigation",
@@ -745,6 +734,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -142.38,
+      'pitch': -3.34,
+      'fov': 88,
+    },
     "id": "pano64",
     "name": "Suite Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano64).",
@@ -762,27 +756,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo915",
-        "yaw": -133.015513,
-        "pitch": -8.652522,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo915_playbtn",
-        "yaw": -133.015513,
-        "pitch": -8.652522,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo915_pausebtn",
-        "yaw": -133.015513,
-        "pitch": -8.652522,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint881",
-        "yaw": 102.055671,
-        "pitch": 0.758883,
+        "yaw": -78.26,
+        "pitch": -1.57,
         "coordType": "angular",
         "label": "Suite Room",
         "type": "navigation",
@@ -791,6 +767,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -169.81,
+      'pitch': -1.88,
+      'fov': 92,
+    },
     "id": "pano65",
     "name": "Suite Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano65).",
@@ -809,8 +790,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint882",
-        "yaw": 174.247198,
-        "pitch": 4.54554,
+        'yaw': -15.57,
+        'pitch': -4.16,
         "coordType": "angular",
         "label": "Suite Room",
         "type": "navigation",
@@ -855,6 +836,11 @@ export const rooms = [
     "hotspots": []
   },
   {
+    'defaultView': {
+      'yaw': -14.75,
+      'pitch': -5.05,
+      'fov': 92,
+    },
     "id": "pano40",
     "name": "Eternal Suite Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano40).",
@@ -872,27 +858,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo909",
-        "yaw": 152.105685,
-        "pitch": -3.044488,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo909_playbtn",
-        "yaw": 152.105685,
-        "pitch": -3.044488,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo909_pausebtn",
-        "yaw": 152.105685,
-        "pitch": -3.044488,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint883",
-        "yaw": -106.728482,
-        "pitch": 0.302939,
+        'yaw': 73.3,
+        'pitch': -0.9,
         "coordType": "angular",
         "label": "Eternal Suite Room",
         "type": "navigation",
@@ -901,6 +869,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 149.46,
+      'pitch': -12.85,
+      'fov': 86,
+    },
     "id": "pano41",
     "name": "Eternal Suite Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano41).",
@@ -919,8 +892,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint884",
-        "yaw": -47.917804,
-        "pitch": 1.089535,
+        'yaw': 133.7,
+        'pitch': -1.05,
         "coordType": "angular",
         "label": "Eternal Suite Room",
         "type": "navigation",
@@ -928,8 +901,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint885",
-        "yaw": -33.999124,
-        "pitch": 0.799019,
+        'yaw': 144.72,
+        'pitch': -0.76,
         "coordType": "angular",
         "label": "Eternal Suite Room",
         "type": "navigation",
@@ -938,6 +911,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      yaw: 177.99,
+      pitch: -7.12,
+      fov: 92,
+    },
     "id": "pano42",
     "name": "Eternal Suite Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano42).",
@@ -956,8 +934,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint886",
-        "yaw": -121.239361,
-        "pitch": 4.848479,
+        'yaw': 55.49,
+        'pitch': -6.97,
         "coordType": "angular",
         "label": "Eternal Suite Room",
         "type": "navigation",
@@ -1020,6 +998,11 @@ export const rooms = [
     "hotspots": []
   },
   {
+    'defaultView': {
+      'yaw': -174.7,
+      'pitch': -7.61,
+      'fov': 88,
+    },
     "id": "pano61",
     "name": "Royal Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano61).",
@@ -1037,27 +1020,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo917",
-        "yaw": -12.016238,
-        "pitch": -3.299736,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo917_playbtn",
-        "yaw": -12.016238,
-        "pitch": -3.299736,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo917_pausebtn",
-        "yaw": -12.016238,
-        "pitch": -3.299736,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint887",
-        "yaw": -37.392837,
-        "pitch": 1.515062,
+        'yaw': 144.94,
+        'pitch': -0.43,
         "coordType": "angular",
         "label": "Royal Room",
         "type": "navigation",
@@ -1065,8 +1030,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint888",
-        "yaw": 51.320529,
-        "pitch": 6.060601,
+        'yaw': -128,
+        'pitch': -7.96,
         "coordType": "angular",
         "label": "Royal Room",
         "type": "navigation",
@@ -1075,6 +1040,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 13.52,
+      'pitch': -14.44,
+      'fov': 92,
+    },
     "id": "pano62",
     "name": "Royal Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano62).",
@@ -1093,8 +1063,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint889",
-        "yaw": 38.603876,
-        "pitch": 7.878785,
+        'yaw': -139.98,
+        'pitch': -2.29,
         "coordType": "angular",
         "label": "Royal Room",
         "type": "navigation",
@@ -1103,6 +1073,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -174.7,
+      'pitch': -7.61,
+      'fov': 68,
+    },
     "id": "pano63",
     "name": "Royal Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano63).",
@@ -1120,27 +1095,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo910",
-        "yaw": 28.563879,
-        "pitch": -4.151084,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo910_playbtn",
-        "yaw": 28.563879,
-        "pitch": -4.151084,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo910_pausebtn",
-        "yaw": 28.563879,
-        "pitch": -4.151084,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint890",
-        "yaw": 9.234717,
-        "pitch": 0.909001,
+        'yaw': -169.83,
+        'pitch': -1.29,
         "coordType": "angular",
         "label": "Royal Room",
         "type": "navigation",
@@ -1149,6 +1106,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 6.33,
+      'pitch': -15.65,
+      'fov': 92,
+    },
     "id": "pano56",
     "name": "President Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano56).",
@@ -1166,27 +1128,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo916",
-        "yaw": 3.744854,
-        "pitch": 4.144888,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo916_playbtn",
-        "yaw": 3.744854,
-        "pitch": 4.144888,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo916_pausebtn",
-        "yaw": 3.744854,
-        "pitch": 4.144888,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint891",
-        "yaw": 67.36752,
-        "pitch": 2.424245,
+        'yaw': -112.34,
+        'pitch': -2.74,
         "coordType": "angular",
         "label": "President Room",
         "type": "navigation",
@@ -1194,8 +1138,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint892",
-        "yaw": 162.741959,
-        "pitch": 2.121123,
+        'yaw': -17.75,
+        'pitch': -0.36,
         "coordType": "angular",
         "label": "President Room",
         "type": "navigation",
@@ -1204,6 +1148,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -165.92,
+      'pitch': -12.48,
+      'fov': 92,
+    },
     "id": "pano57",
     "name": "President Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano57).",
@@ -1222,8 +1171,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint895",
-        "yaw": 92.800806,
-        "pitch": 2.121123,
+        'yaw' : -84.95,
+        'pitch': -3.61,
         "coordType": "angular",
         "label": "President Room",
         "type": "navigation",
@@ -1232,6 +1181,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -103.51,
+      'pitch': -16.75,
+      'fov': 92,
+    },  
     "id": "pano60",
     "name": "President Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano60).",
@@ -1249,27 +1203,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo912",
-        "yaw": 47.336499,
-        "pitch": -1.854831,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo912_playbtn",
-        "yaw": 47.336499,
-        "pitch": -1.854831,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo912_pausebtn",
-        "yaw": 47.336499,
-        "pitch": -1.854831,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint893",
-        "yaw": 107.031233,
-        "pitch": 1.212122,
+        'yaw': -72.27,
+        'pitch': -1.17,
         "coordType": "angular",
         "label": "President Room",
         "type": "navigation",
@@ -1277,8 +1213,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint894",
-        "yaw": 92.498038,
-        "pitch": 1.818184,
+        'yaw': -87.15,
+        'pitch': -1.63,
         "coordType": "angular",
         "label": "President Room",
         "type": "navigation",
@@ -1287,6 +1223,7 @@ export const rooms = [
     ]
   },
   {
+
     "id": "pano58",
     "name": "President Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano58).",
@@ -1305,6 +1242,11 @@ export const rooms = [
     "hotspots": []
   },
   {
+    'defaultView': {
+      'yaw': 2.81,
+      'pitch': 2.63,
+      'fov': 80,
+    },
     "id": "pano59",
     "name": "President Room",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano59).",
@@ -1323,8 +1265,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint896",
-        "yaw": 57.073309,
-        "pitch": 5.45454,
+        'yaw': -123.37,
+        'pitch': -5.01,
         "coordType": "angular",
         "label": "President Room",
         "type": "navigation",
@@ -1333,6 +1275,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 9.99,
+      'pitch': -11.14,
+      'fov': 86,
+    },
     "id": "pano17",
     "name": "Buffet sáng",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano17).",
@@ -1351,8 +1298,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint856",
-        "yaw": -99.159122,
-        "pitch": 1.515062,
+        'yaw': 79.44,
+        'pitch': -1.53,
         "coordType": "angular",
         "label": "Buffet sáng",
         "type": "navigation",
@@ -1361,6 +1308,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -173.25,
+      'pitch': -16.26,
+      'fov': 88,
+    },
     "id": "pano18",
     "name": "Buffet sáng",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano18).",
@@ -1379,8 +1331,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint857",
-        "yaw": 1.208153,
-        "pitch": 2.340721,
+        'yaw': -179.19,
+        'pitch': -0.13,
         "coordType": "angular",
         "label": "Buffet sáng",
         "type": "navigation",
@@ -1389,6 +1341,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -107.89,
+      'pitch': -10.16,
+      'fov': 92,
+    },
     "id": "pano25",
     "name": "Nhà hàng The Sun",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano25).",
@@ -1407,8 +1364,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint858",
-        "yaw": -22.859641,
-        "pitch": 2.424245,
+        "yaw": 160.01677,
+        "pitch": 1.212122,
         "coordType": "angular",
         "label": "Nhà hàng The Sun",
         "type": "navigation",
@@ -1416,8 +1373,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint859",
-        "yaw": 160.01677,
-        "pitch": 1.212122,
+        "yaw": -22.859641,
+        "pitch": 2.424245,
         "coordType": "angular",
         "label": "Nhà hàng The Sun",
         "type": "navigation",
@@ -1426,6 +1383,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -4.03,
+      'pitch': -11.5,
+      'fov': 92,
+    },
     "id": "pano28",
     "name": "Nhà hàng The Sun",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano28).",
@@ -1444,8 +1406,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint860",
-        "yaw": -126.4086,
-        "pitch": 0.606061,
+        'yaw': 41.79,
+        'pitch': 0.73,
         "coordType": "angular",
         "label": "Nhà hàng The Sun",
         "type": "navigation",
@@ -1454,6 +1416,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -151.67,
+      'pitch': -8.33,
+      'fov': 92,
+    },
     "id": "pano27",
     "name": "Nhà hàng The Sun",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano27).",
@@ -1472,8 +1439,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint861",
-        "yaw": -32.685839,
-        "pitch": 3.924361,
+        'yaw': 145.61,
+        'pitch': -4.15,
         "coordType": "angular",
         "label": "Nhà hàng The Sun",
         "type": "navigation",
@@ -1482,6 +1449,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 41.32,
+      'pitch': -14.43,
+      'fov': 92,
+    },
     "id": "pano24",
     "name": "Nhà hàng The Moon",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano24).",
@@ -1500,8 +1472,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint862",
-        "yaw": -137.314441,
-        "pitch": -2.192041,
+        'yaw': 41.44,
+        'pitch': 2.68,
         "coordType": "angular",
         "label": "Nhà hàng The Moon",
         "type": "navigation",
@@ -1510,6 +1482,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -19.88,
+      'pitch': -1.26,
+      'fov': 92,
+    },
     "id": "pano23",
     "name": "Nhà hàng The Moon",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano23).",
@@ -1528,8 +1505,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint863",
-        "yaw": -0.758518,
-        "pitch": -0.270538,
+        'yaw': 179.63,
+        'pitch': -0.64,
         "coordType": "angular",
         "label": "Nhà hàng The Moon",
         "type": "navigation",
@@ -1538,6 +1515,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -165.8,
+      'pitch': -10.65,
+      'fov': 92,
+    },
     "id": "pano20",
     "name": "Star Night Pool Bar",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano20).",
@@ -1556,8 +1538,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint864",
-        "yaw": 106.112888,
-        "pitch": -4.835701,
+        'yaw': -74.96,
+        'pitch': 4.67,
         "coordType": "angular",
         "label": "Star Night Pool Bar",
         "type": "navigation",
@@ -1565,8 +1547,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint865",
-        "yaw": 112.495687,
-        "pitch": 3.235323,
+        'yaw': -68.2,
+        'pitch': -4.01,
         "coordType": "angular",
         "label": "Hồ bơi vô cực",
         "type": "navigation",
@@ -1575,6 +1557,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 111.18,
+      'pitch': 2.76,
+      'fov': 88,
+    },
     "id": "pano21",
     "name": "Star Night Pool Bar",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano21).",
@@ -1593,8 +1580,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint866",
-        "yaw": 115.986958,
-        "pitch": 8.770502,
+        'yaw': -65.92,
+        'pitch': -8.9,
         "coordType": "angular",
         "label": "Star Night Pool Bar",
         "type": "navigation",
@@ -1604,8 +1591,8 @@ export const rooms = [
   },
   {
     'defaultView': {
-      'yaw': -109.85,
-      'pitch': -8.09,
+      'yaw': 37.78,
+      'pitch': -8.58,
       'fov': 72,
     },
     "id": "pano19",
@@ -1636,6 +1623,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 74.35,
+      'pitch': -10.53,
+      'fov': 74,
+    },
     "id": "pano34",
     "name": "Lễ tân Spa",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano34).",
@@ -1654,8 +1646,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint670",
-        "yaw": -1.362605,
-        "pitch": 16.060681,
+        'yaw': -178.97,
+        'pitch': -12.6,
         "coordType": "angular",
         "label": "Massage bàn chân",
         "type": "navigation",
@@ -1663,8 +1655,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint671",
-        "yaw": -132.322319,
-        "pitch": 2.478061,
+        'yaw': 46.65,
+        'pitch': -0.47,
         "coordType": "angular",
         "label": "Hồ bơi vô cực",
         "type": "navigation",
@@ -1673,6 +1665,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 4.86,
+      'pitch': -10.16,
+      'fov': 92,
+    },
     "id": "pano30",
     "name": "Massage bàn chân",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano30).",
@@ -1691,8 +1688,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint672",
-        "yaw": -47.892601,
-        "pitch": 3.517921,
+        'yaw': 133.18,
+        'pitch': -3.42,
         "coordType": "angular",
         "label": "Lễ tân Spa",
         "type": "navigation",
@@ -1700,8 +1697,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint673",
-        "yaw": 70.342562,
-        "pitch": 0.184675,
+        'yaw': -108.48,
+        'pitch': -0.72,
         "coordType": "angular",
         "label": "Phòng massage",
         "type": "navigation",
@@ -1709,8 +1706,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint674",
-        "yaw": 84.521878,
-        "pitch": -0.092338,
+        'yaw': -96.38,
+        'pitch': -0.99,
         "coordType": "angular",
         "label": "Phòng xông hơi",
         "type": "navigation",
@@ -1718,8 +1715,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint675",
-        "yaw": 77.524209,
-        "pitch": 0.092343,
+        'yaw': -102.16,
+        'pitch': -1.04,
         "coordType": "angular",
         "label": "Bể sục Jacuzzi",
         "type": "navigation",
@@ -1728,6 +1725,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -65.98,
+      'pitch': -13.45,
+      'fov': 92,
+    },
     "id": "pano33",
     "name": "Phòng massage",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano33).",
@@ -1746,8 +1748,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint676",
-        "yaw": -35.576284,
-        "pitch": 3.636357,
+        'yaw': 138.67,
+        'pitch': -1.21,
         "coordType": "angular",
         "label": "Massage bàn chân",
         "type": "navigation",
@@ -1756,6 +1758,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -46.95,
+      'pitch': -3.94,
+      'fov': 92,
+    },
     "id": "pano35",
     "name": "Phòng xông hơi",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano35).",
@@ -1774,8 +1781,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint677",
-        "yaw": -8.326435,
-        "pitch": 8.181896,
+        'yaw': 173.6,
+        'pitch': -5.45,
         "coordType": "angular",
         "label": "Massage bàn chân",
         "type": "navigation",
@@ -1784,6 +1791,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -114.85,
+      'pitch': -0.16,
+      'fov': 92,
+    },
     "id": "pano31",
     "name": "Bể sục Jacuzzi",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano31).",
@@ -1802,8 +1814,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint678",
-        "yaw": -72.880919,
-        "pitch": 3.355197,
+        'yaw': 107.04,
+        'pitch': -4.37,
         "coordType": "angular",
         "label": "Massage bàn chân",
         "type": "navigation",
@@ -1812,6 +1824,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -8.08,
+      'pitch': -20.9,
+      'fov': 92,
+    },
     "id": "pano71",
     "name": "Phòng hội nghị",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano71).",
@@ -1829,27 +1846,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo1187",
-        "yaw": 170.771585,
-        "pitch": -2.223959,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1187_playbtn",
-        "yaw": 170.771585,
-        "pitch": -2.223959,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1187_pausebtn",
-        "yaw": 170.771585,
-        "pitch": -2.223959,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint679",
-        "yaw": -167.888988,
-        "pitch": 2.727356,
+        'yaw': 10.15,
+        'pitch': -1.66,
         "coordType": "angular",
         "label": "Phòng hội nghị",
         "type": "navigation",
@@ -1858,6 +1857,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 6.55,
+      'pitch': -17.49,
+      'fov': 92,
+    },
     "id": "pano72",
     "name": "Phòng hội nghị",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano72).",
@@ -1874,28 +1878,11 @@ export const rooms = [
       ]
     },
     "hotspots": [
-      {
-        "id": "spotvideo1188",
-        "yaw": -122.130818,
-        "pitch": -2.348341,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1188_playbtn",
-        "yaw": -122.130818,
-        "pitch": -2.348341,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1188_pausebtn",
-        "yaw": -122.130818,
-        "pitch": -2.348341,
-        "coordType": "angular"
-      },
+    
       {
         "id": "spotpoint680",
-        "yaw": 151.841869,
-        "pitch": 4.848479,
+        'yaw': -34.5,
+        'pitch': -8.02,
         "coordType": "angular",
         "label": "Phòng hội nghị",
         "type": "navigation",
@@ -1904,6 +1891,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': -27.32,
+      'pitch': -5.28,
+      'fov': 92,
+    },
     "id": "pano73",
     "name": "Phòng Gym",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano73).",
@@ -1921,27 +1913,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo1185",
-        "yaw": -157.759031,
-        "pitch": -2.510397,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1185_playbtn",
-        "yaw": -157.759031,
-        "pitch": -2.510397,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1185_pausebtn",
-        "yaw": -157.759031,
-        "pitch": -2.510397,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint681",
-        "yaw": -71.303759,
-        "pitch": 12.424325,
+        'yaw': 106.4,
+        'pitch': -10.04,
         "coordType": "angular",
         "label": "Phòng Yoga",
         "type": "navigation",
@@ -1949,8 +1923,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint692",
-        "yaw": 54.053636,
-        "pitch": 4.642925,
+        'yaw': -119.71,
+        'pitch': -7.7,
         "coordType": "angular",
         "label": "Kid's Club",
         "type": "navigation",
@@ -1959,6 +1933,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 76.54,
+      'pitch': -10.52,
+      'fov': 92,
+    },
     "id": "pano74",
     "name": "Phòng Yoga",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano74).",
@@ -1977,8 +1956,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint682",
-        "yaw": 47.989805,
-        "pitch": 13.030375,
+        'yaw': -132.24,
+        'pitch': -10.67,
         "coordType": "angular",
         "label": "Phòng Gym",
         "type": "navigation",
@@ -1987,6 +1966,11 @@ export const rooms = [
     ]
   },
   {
+    defaultView: {
+      yaw: -34.27,
+      pitch: -4.79,
+      fov: 92,
+    },
     "id": "pano75",
     "name": "Kid's Club",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano75).",
@@ -2005,8 +1989,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint687",
-        "yaw": 89.370003,
-        "pitch": 1.497059,
+        'yaw': -90.62,
+        'pitch': 0.61,
         "coordType": "angular",
         "label": "Hồ bơi vô cực",
         "type": "navigation",
@@ -2014,8 +1998,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint691",
-        "yaw": 83.343229,
-        "pitch": 1.377175,
+        'yaw': -96.76,
+        'pitch': 0.1,
         "coordType": "angular",
         "label": "Phòng Gym",
         "type": "navigation",
@@ -2024,6 +2008,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 50.94,
+      'pitch': -0.05,
+      'fov': 92,
+    },
     "id": "pano76",
     "name": "Hồ bơi vô cực",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano76).",
@@ -2042,8 +2031,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint683",
-        "yaw": 2.573633,
-        "pitch": -3.333423,
+        'yaw': -176.76,
+        'pitch': 3.71,
         "coordType": "angular",
         "label": "Kid's Club",
         "type": "navigation",
@@ -2051,8 +2040,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint684",
-        "yaw": -62.523,
-        "pitch": 0.302939,
+        'yaw': 117.58,
+        'pitch': -0.72,
         "coordType": "angular",
         "label": "Hồ bơi vô cực",
         "type": "navigation",
@@ -2060,8 +2049,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint689",
-        "yaw": 79.478638,
-        "pitch": -6.666657,
+        'yaw': -100.24,
+        'pitch': 4.82,
         "coordType": "angular",
         "label": "Star Night Pool Bar",
         "type": "navigation",
@@ -2070,6 +2059,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 4.49,
+      'pitch': -4.93,
+      'fov': 92,
+    },
     "id": "pano77",
     "name": "Hồ bơi vô cực",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano77).",
@@ -2088,8 +2082,8 @@ export const rooms = [
     "hotspots": [
       {
         "id": "spotpoint685",
-        "yaw": -18.923403,
-        "pitch": -4.54554,
+        'yaw': 162.4,
+        'pitch': 4.91,
         "coordType": "angular",
         "label": "Lễ tân Spa",
         "type": "navigation",
@@ -2097,8 +2091,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint686",
-        "yaw": 120.857034,
-        "pitch": 0.611275,
+        'yaw': -65.11,
+        'pitch': 0.38,
         "coordType": "angular",
         "label": "Hồ bơi vô cực",
         "type": "navigation",
@@ -2106,8 +2100,8 @@ export const rooms = [
       },
       {
         "id": "spotpoint690",
-        "yaw": 146.694603,
-        "pitch": -42.12126,
+        'yaw': -60.44,
+        'pitch': 33.89,
         "coordType": "angular",
         "label": "Star Night Pool Bar",
         "type": "navigation",
@@ -2116,6 +2110,11 @@ export const rooms = [
     ]
   },
   {
+    'defaultView': {
+      'yaw': 65.32,
+      'pitch': -2.61,
+      'fov': 92,
+    },
     "id": "pano10",
     "name": "Business center",
     "description": "Ảnh 360 từ tour gốc Regalia Gold (pano10).",
@@ -2133,27 +2132,9 @@ export const rooms = [
     },
     "hotspots": [
       {
-        "id": "spotvideo1186",
-        "yaw": 48.296186,
-        "pitch": -10.225255,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1186_playbtn",
-        "yaw": 48.296186,
-        "pitch": -10.225255,
-        "coordType": "angular"
-      },
-      {
-        "id": "spotvideo1186_pausebtn",
-        "yaw": 48.296186,
-        "pitch": -10.225255,
-        "coordType": "angular"
-      },
-      {
         "id": "spotpoint688",
-        "yaw": -134.583839,
-        "pitch": 0.909001,
+        'yaw': 43.78,
+        'pitch': -1.66,
         "coordType": "angular",
         "label": "Sảnh đón khách",
         "type": "navigation",
